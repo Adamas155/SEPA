@@ -1,0 +1,41 @@
+{
+  "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01/latest.pt",
+  "sha256": "0d97587018275d37f70f72c8492bc4e56d5eb1132022528d30a7bfde6d9386fa",
+  "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+  "failed_utc": "2026-09-11T06:43:35.160034+00:00",
+  "recovery_started_utc": "2026-09-11T08:30:09.459798+00:00",
+  "restarted_utc": "2026-09-11T08:33:10.060244+00:00",
+  "pid": 8347,
+  "file_limit_regression": {
+    "passed": true,
+    "results": [
+      {
+        "mode": "baseline",
+        "batches": 985,
+        "fd_before": 4,
+        "fd_peak_sampled": 926,
+        "fd_after": 13,
+        "error": "RuntimeError: received 0 items of ancdata",
+        "limit": [
+          1024,
+          1048576
+        ]
+      },
+      {
+        "mode": "raised",
+        "batches": 4096,
+        "fd_before": 4,
+        "fd_peak_sampled": 4126,
+        "fd_after": 13,
+        "error": null,
+        "limit": [
+          65536,
+          1048576
+        ]
+      }
+    ]
+  },
+  "verified_utc": "2026-09-11T08:37:18.154845+00:00",
+  "checkpoint_unchanged": true,
+  "original_training_seconds": 2313.4410634040833
+}

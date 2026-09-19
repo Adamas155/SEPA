@@ -1,0 +1,20 @@
+{
+  "pid": 2206,
+  "utc": "2026-09-14T04:52:13.338632+00:00",
+  "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/diagnostics/ijepa-fov-seed0-d01ebf396117",
+  "protocol_id": "d01ebf3961178df82a91c588217de1b15a74d48c04d470eed33ffc86ef62707a",
+  "shutdown_on_success": true,
+  "phase": "complete",
+  "results": {
+    "student": {
+      "top1": 0.5154,
+      "top5": 0.7984,
+      "knn": 0.3888
+    },
+    "teacher": {
+      "top1": 0.515,
+      "top5": 0.8,
+      "knn": 0.3904
+    }
+  }
+}

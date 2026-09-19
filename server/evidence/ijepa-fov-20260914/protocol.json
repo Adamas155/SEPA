@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "experiment": "frozen_ijepa_global_vs_local80",
+  "source_run_id": "3e242d05b38e789016cceb96b7c1d55983842c5d640b508965442a6576b8558f",
+  "checkpoint_sha": "7a651508975a97ab68b7a67129bea0cb737f1ef8ff2f3bb9ffb154fa7c0cd412",
+  "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+  "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+  "script_sha": "2147c1040622fda8934ef61d16f9337b1fec3997848f4beca42e460e66024673",
+  "baseline_adapter_sha": "47971b459e121a8aafd6e80f76496801fa5b266cad6b2434be60d9cbc10881e0",
+  "diagnostic_sha": "368ce3d8c4d052d5fb1e8744332e96df90163434bb953cc4ffdbc79636194611",
+  "probe": {
+    "epochs": 200,
+    "batch_size": 128,
+    "learning_rate": 0.005,
+    "weight_decay": 0.0,
+    "label_fraction": 1.0,
+    "knn_k": 20,
+    "knn_temperature": 0.07,
+    "spatial_steps": 300,
+    "spatial_learning_rate": 0.01
+  },
+  "seed": 0,
+  "branches": [
+    "student",
+    "teacher"
+  ],
+  "precision": "fp32",
+  "input": "same center-square bicubic 240px RGB images",
+  "local": "nine independent 5x5 patch sequences; original global position embeddings; no resizing",
+  "pooling": "mean of all 225 outputs in original raster order for both conditions",
+  "limitation": "Frozen whole-image-pretrained weights. Local evaluation changes the inference distribution; this is not a local-pretraining ablation.",
+  "experiment_id": "d01ebf3961178df82a91c588217de1b15a74d48c04d470eed33ffc86ef62707a"
+}

@@ -1,0 +1,22 @@
+{
+  "pid": 5160,
+  "job": {
+    "kind": "selected",
+    "variant": "k0_student",
+    "recipe": {
+      "learning_rate": 0.005,
+      "epochs": 200
+    },
+    "id": "k0_student"
+  },
+  "started_utc": "2026-09-12T05:27:46.852286+00:00",
+  "status": "running",
+  "event": "fit",
+  "updated_utc": "2026-09-12T05:30:58.386471+00:00",
+  "cache": "k0_student-val.pt",
+  "epoch": 85,
+  "online_train_loss": 3.42283189910629,
+  "online_train_top1": 0.20852672792144233,
+  "epochs": 200,
+  "elapsed_seconds": 189.04940213635564
+}

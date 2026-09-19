@@ -1,0 +1,10 @@
+{
+  "scores": {
+    "top1": 0.1862,
+    "top5": 0.4174,
+    "knn": 0.1504
+  },
+  "origin": "original frozen classifier replay",
+  "probe_sha256": "3851e17dcde371ae76eceb7584565782b152890c4a0feab3e279a3a9dc90810e",
+  "exact_original_score_reproduction": true
+}

@@ -1,0 +1,45 @@
+test_all_mask_sets_and_subset_permutations_are_valid (test_contracts.GeometryTests.test_all_mask_sets_and_subset_permutations_are_valid) ... ok
+test_crop_and_padding_preserve_all_pixels (test_contracts.GeometryTests.test_crop_and_padding_preserve_all_pixels) ... ok
+test_k_pairing_and_distribution (test_contracts.GeometryTests.test_k_pairing_and_distribution) ... ok
+test_padding_cannot_read_neighbor (test_contracts.GeometryTests.test_padding_cannot_read_neighbor) ... ok
+test_three_cycle_direction_and_anchor (test_contracts.GeometryTests.test_three_cycle_direction_and_anchor) ... ok
+test_aggregation_control_has_explicit_gradient_boundary (test_contracts.ModelTests.test_aggregation_control_has_explicit_gradient_boundary) ... ok
+test_forward_shapes_and_hidden_pixels (test_contracts.ModelTests.test_forward_shapes_and_hidden_pixels) ... ok
+test_local_encoder_no_cross_tile_gradients (test_contracts.ModelTests.test_local_encoder_no_cross_tile_gradients) ... ok
+test_pair_labels (test_contracts.ModelTests.test_pair_labels) ... ok
+test_position_binding_and_order (test_contracts.ModelTests.test_position_binding_and_order) ... ok
+test_position_diagnostic_preserves_state (test_contracts.ModelTests.test_position_diagnostic_preserves_state) ... ok
+test_relation_head_does_not_change_shared_initialization (test_contracts.ModelTests.test_relation_head_does_not_change_shared_initialization) ... ok
+test_relation_isolation_and_gradient (test_contracts.ModelTests.test_relation_isolation_and_gradient) ... ok
+test_semantic_loss_teacher_and_ema (test_contracts.ModelTests.test_semantic_loss_teacher_and_ema) ... ok
+test_config_rejects_bad_fields (test_contracts.PipelineTests.test_config_rejects_bad_fields) ... ok
+test_dataset_pairing_across_k_and_worker_count (test_contracts.PipelineTests.test_dataset_pairing_across_k_and_worker_count) ... ok
+test_invalid_encoder_output_does_not_create_probe_artifacts (test_contracts.PipelineTests.test_invalid_encoder_output_does_not_create_probe_artifacts) ... ok
+test_linear_stats_training_only_and_knn (test_contracts.PipelineTests.test_linear_stats_training_only_and_knn) ... ok
+test_matrix_resumes_existing_and_starts_missing_runs (test_contracts.PipelineTests.test_matrix_resumes_existing_and_starts_missing_runs) ... ok
+test_modified_image_rejected (test_contracts.PipelineTests.test_modified_image_rejected) ... ok
+test_padding_train_and_diagnostic (test_contracts.PipelineTests.test_padding_train_and_diagnostic) ... ok
+test_resume_matches_continuous_and_probes_run (test_contracts.PipelineTests.test_resume_matches_continuous_and_probes_run) ... ok
+test_train_val_duplicate_rejected (test_contracts.PipelineTests.test_train_val_duplicate_rejected) ... ok
+test_training_logs_constant_encoder_collapse (test_contracts.PipelineTests.test_training_logs_constant_encoder_collapse) ... ok
+test_collapse_thresholds_must_be_positive_and_finite (test_numerics.CollapseTests.test_collapse_thresholds_must_be_positive_and_finite) ... ok
+test_constant_encoder_is_flagged_even_when_ratio_is_large (test_numerics.CollapseTests.test_constant_encoder_is_flagged_even_when_ratio_is_large) ... ok
+test_healthy_distinct_images_pass_available_checks (test_numerics.CollapseTests.test_healthy_distinct_images_pass_available_checks) ... ok
+test_nonfinite_diagnostics_fail (test_numerics.CollapseTests.test_nonfinite_diagnostics_fail) ... ok
+test_nonoverlapping_queries_do_not_claim_complete_checks (test_numerics.CollapseTests.test_nonoverlapping_queries_do_not_claim_complete_checks) ... ok
+test_single_or_duplicate_images_are_unknown_without_positive_evidence (test_numerics.CollapseTests.test_single_or_duplicate_images_are_unknown_without_positive_evidence) ... ok
+test_slot_only_features_are_compared_at_matching_canonical_positions (test_numerics.CollapseTests.test_slot_only_features_are_compared_at_matching_canonical_positions) ... ok
+test_small_absolute_variance_is_not_hidden_by_healthy_ratio (test_numerics.CollapseTests.test_small_absolute_variance_is_not_hidden_by_healthy_ratio) ... ok
+test_finite_features_with_overflowing_statistics_are_rejected (test_numerics.ProbeNumericsTests.test_finite_features_with_overflowing_statistics_are_rejected) ... ok
+test_invalid_classifier_logits_cannot_become_accuracy (test_numerics.ProbeNumericsTests.test_invalid_classifier_logits_cannot_become_accuracy) ... ok
+test_invalid_features_rejected_in_every_probe (test_numerics.ProbeNumericsTests.test_invalid_features_rejected_in_every_probe) ... ok
+test_invalid_final_parameter_update_is_rejected (test_numerics.ProbeNumericsTests.test_invalid_final_parameter_update_is_rejected) ... ok
+test_invalid_gradient_stops_before_optimizer_update (test_numerics.ProbeNumericsTests.test_invalid_gradient_stops_before_optimizer_update) ... ok
+test_invalid_logits_stop_all_probe_training_heads (test_numerics.ProbeNumericsTests.test_invalid_logits_stop_all_probe_training_heads) ... ok
+test_nan_loss_stops_before_optimizer_update (test_numerics.ProbeNumericsTests.test_nan_loss_stops_before_optimizer_update) ... ok
+test_nonfinite_saved_scores_cannot_enter_stage1_summary (test_numerics.ProbeNumericsTests.test_nonfinite_saved_scores_cannot_enter_stage1_summary) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 3.882s
+
+OK

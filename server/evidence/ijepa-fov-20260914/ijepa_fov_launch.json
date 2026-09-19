@@ -1,0 +1,9 @@
+{
+  "pid": 2206,
+  "utc": "20260914T044330Z",
+  "log": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/ijepa-fov-20260914T044330Z.log",
+  "host": "connect.weste.seetacloud.com",
+  "port": 45524,
+  "protocol_id": "d01ebf3961178df82a91c588217de1b15a74d48c04d470eed33ffc86ef62707a",
+  "shutdown_on_success": true
+}

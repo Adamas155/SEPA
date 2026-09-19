@@ -1,0 +1,25 @@
+{
+  "pid": 22147,
+  "started_utc": "2026-09-11T15:19:01.566429+00:00",
+  "seed": 0,
+  "completed_baselines": [
+    "k0_student"
+  ],
+  "completed_sweeps": [],
+  "completed_final": [],
+  "phase": "features",
+  "updated_utc": "2026-09-11T15:23:52.017102+00:00",
+  "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/diagnostics/low-top1-seed0-06d224d7de0a",
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660",
+  "variant": "k0_teacher",
+  "split": "train",
+  "event": "extract",
+  "batch": 701,
+  "batches": 990,
+  "elapsed_seconds": 113.08210922405124,
+  "scores": {
+    "top1": 0.1518,
+    "top5": 0.3698,
+    "knn": 0.1132
+  }
+}

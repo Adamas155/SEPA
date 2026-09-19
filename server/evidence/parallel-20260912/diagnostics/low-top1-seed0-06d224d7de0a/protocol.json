@@ -1,0 +1,501 @@
+{
+  "schema": 1,
+  "seed": 0,
+  "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+  "diagnostic_code": {
+    "run_diagnostics.py": "20580173e934ad0bc91303ada5f6e7236fbc952e7727a7b8d03c07013b82f0f0",
+    "diagnostic_lib.py": "368ce3d8c4d052d5fb1e8744332e96df90163434bb953cc4ffdbc79636194611",
+    "test_diagnostics.py": "42f16599b05ad0fbd98042e02949126785ea06443291ad1ba59f4982b3381acd"
+  },
+  "checkpoints": {
+    "k0": {
+      "path": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01/latest.pt",
+      "sha256": "0d97587018275d37f70f72c8492bc4e56d5eb1132022528d30a7bfde6d9386fa",
+      "run_id": "84d4cf0f4f01d23b79219c1e3ea033f25213eff6cecbaac36aa62677feb655ed",
+      "probe_sha256": "f24112bcc23d85e4f5cbd87a498ab262cd4fd79d79cc690a81c3b1056f770bad",
+      "original": {
+        "schema": 1,
+        "metadata": {
+          "schema": 1,
+          "config": {
+            "geometry": {
+              "mode": "native80",
+              "padding": "reflect"
+            },
+            "model": {
+              "name": "vit_small",
+              "predictor_dim": 192,
+              "predictor_depth": 2,
+              "predictor_heads": 6,
+              "relation": "none",
+              "relation_hidden": 128,
+              "relation_weight": 0.0
+            },
+            "data": {
+              "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+              "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+              "expected_classes": 100,
+              "crop_min": 0.3,
+              "crop_max": 1.0,
+              "horizontal_flip": 0.5,
+              "color_jitter": 0.2
+            },
+            "training": {
+              "steps": 20000,
+              "batch_size": 64,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.04,
+              "warmup_steps": 500,
+              "minimum_lr_ratio": 0.01,
+              "ema_start": 0.996,
+              "clip_grad": 1.0,
+              "checkpoint_every": 500,
+              "log_every": 50,
+              "num_workers": 4,
+              "device": "auto",
+              "precision": "fp32",
+              "deterministic": true,
+              "collapse_ratio": 0.05,
+              "collapse_min_std": 0.0001,
+              "collapse_min_image_std": 0.0001,
+              "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+            },
+            "probe": {
+              "epochs": 50,
+              "batch_size": 128,
+              "learning_rate": 0.05,
+              "weight_decay": 0.0,
+              "label_fraction": 1.0,
+              "knn_k": 20,
+              "knn_temperature": 0.07,
+              "spatial_steps": 300,
+              "spatial_learning_rate": 0.01
+            }
+          },
+          "seed": 0,
+          "k": 0,
+          "method": "sepa",
+          "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+          "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+          "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+          "run_id": "84d4cf0f4f01d23b79219c1e3ea033f25213eff6cecbaac36aa62677feb655ed"
+        },
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1518,
+          "top5": 0.3698,
+          "knn": 0.1132
+        }
+      }
+    },
+    "k3": {
+      "path": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/latest.pt",
+      "sha256": "c629389a95f2805cc5682d212d66088b26a693dcadfbbd928923496ba3707995",
+      "run_id": "4adbf4439def30778d9579a6f34fecb2fc2f2fd07110b69ed6f3f89b1edc7a21",
+      "probe_sha256": "98547fe6f0b15d55d5ef596e1dd6b7d9b173c73f504fbb32f626f5dd7f2b172a",
+      "original": {
+        "schema": 1,
+        "metadata": {
+          "schema": 1,
+          "config": {
+            "geometry": {
+              "mode": "native80",
+              "padding": "reflect"
+            },
+            "model": {
+              "name": "vit_small",
+              "predictor_dim": 192,
+              "predictor_depth": 2,
+              "predictor_heads": 6,
+              "relation": "none",
+              "relation_hidden": 128,
+              "relation_weight": 0.0
+            },
+            "data": {
+              "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+              "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+              "expected_classes": 100,
+              "crop_min": 0.3,
+              "crop_max": 1.0,
+              "horizontal_flip": 0.5,
+              "color_jitter": 0.2
+            },
+            "training": {
+              "steps": 20000,
+              "batch_size": 64,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.04,
+              "warmup_steps": 500,
+              "minimum_lr_ratio": 0.01,
+              "ema_start": 0.996,
+              "clip_grad": 1.0,
+              "checkpoint_every": 500,
+              "log_every": 50,
+              "num_workers": 4,
+              "device": "auto",
+              "precision": "fp32",
+              "deterministic": true,
+              "collapse_ratio": 0.05,
+              "collapse_min_std": 0.0001,
+              "collapse_min_image_std": 0.0001,
+              "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+            },
+            "probe": {
+              "epochs": 50,
+              "batch_size": 128,
+              "learning_rate": 0.05,
+              "weight_decay": 0.0,
+              "label_fraction": 1.0,
+              "knn_k": 20,
+              "knn_temperature": 0.07,
+              "spatial_steps": 300,
+              "spatial_learning_rate": 0.01
+            }
+          },
+          "seed": 0,
+          "k": 3,
+          "method": "sepa",
+          "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+          "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+          "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+          "run_id": "4adbf4439def30778d9579a6f34fecb2fc2f2fd07110b69ed6f3f89b1edc7a21"
+        },
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1726,
+          "top5": 0.4032,
+          "knn": 0.1176
+        }
+      }
+    },
+    "k6": {
+      "path": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f/latest.pt",
+      "sha256": "acfc1cf79852f0a8a5603fca27ab2d98f87c1c6deaba6d1d02d087b922cef210",
+      "run_id": "82c183aab33f405946859e0b6e4c0b78053ba6f4deb269a8c67e44148ae21dec",
+      "probe_sha256": "e66f9980ede100d6fd0adf2d397ffb3e85ef4c8d18c985cc8d22f275b704146f",
+      "original": {
+        "schema": 1,
+        "metadata": {
+          "schema": 1,
+          "config": {
+            "geometry": {
+              "mode": "native80",
+              "padding": "reflect"
+            },
+            "model": {
+              "name": "vit_small",
+              "predictor_dim": 192,
+              "predictor_depth": 2,
+              "predictor_heads": 6,
+              "relation": "none",
+              "relation_hidden": 128,
+              "relation_weight": 0.0
+            },
+            "data": {
+              "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+              "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+              "expected_classes": 100,
+              "crop_min": 0.3,
+              "crop_max": 1.0,
+              "horizontal_flip": 0.5,
+              "color_jitter": 0.2
+            },
+            "training": {
+              "steps": 20000,
+              "batch_size": 64,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.04,
+              "warmup_steps": 500,
+              "minimum_lr_ratio": 0.01,
+              "ema_start": 0.996,
+              "clip_grad": 1.0,
+              "checkpoint_every": 500,
+              "log_every": 50,
+              "num_workers": 4,
+              "device": "auto",
+              "precision": "fp32",
+              "deterministic": true,
+              "collapse_ratio": 0.05,
+              "collapse_min_std": 0.0001,
+              "collapse_min_image_std": 0.0001,
+              "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+            },
+            "probe": {
+              "epochs": 50,
+              "batch_size": 128,
+              "learning_rate": 0.05,
+              "weight_decay": 0.0,
+              "label_fraction": 1.0,
+              "knn_k": 20,
+              "knn_temperature": 0.07,
+              "spatial_steps": 300,
+              "spatial_learning_rate": 0.01
+            }
+          },
+          "seed": 0,
+          "k": 6,
+          "method": "sepa",
+          "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+          "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+          "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+          "run_id": "82c183aab33f405946859e0b6e4c0b78053ba6f4deb269a8c67e44148ae21dec"
+        },
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.18,
+          "top5": 0.419,
+          "knn": 0.1262
+        }
+      }
+    },
+    "full": {
+      "path": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/latest.pt",
+      "sha256": "fb6dbfe303733b40b37d784b50f3daa8e56e437224a0533d5786f9f42982277f",
+      "run_id": "54ae3007daddc7a80f5af8c18bb61812cca9f75fded7d02200354a610dee4fde",
+      "probe_sha256": "3851e17dcde371ae76eceb7584565782b152890c4a0feab3e279a3a9dc90810e",
+      "original": {
+        "schema": 1,
+        "metadata": {
+          "schema": 1,
+          "config": {
+            "geometry": {
+              "mode": "native80",
+              "padding": "reflect"
+            },
+            "model": {
+              "name": "vit_small",
+              "predictor_dim": 192,
+              "predictor_depth": 2,
+              "predictor_heads": 6,
+              "relation": "none",
+              "relation_hidden": 128,
+              "relation_weight": 0.0
+            },
+            "data": {
+              "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+              "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+              "expected_classes": 100,
+              "crop_min": 0.3,
+              "crop_max": 1.0,
+              "horizontal_flip": 0.5,
+              "color_jitter": 0.2
+            },
+            "training": {
+              "steps": 20000,
+              "batch_size": 64,
+              "learning_rate": 0.0001,
+              "weight_decay": 0.04,
+              "warmup_steps": 500,
+              "minimum_lr_ratio": 0.01,
+              "ema_start": 0.996,
+              "clip_grad": 1.0,
+              "checkpoint_every": 500,
+              "log_every": 50,
+              "num_workers": 4,
+              "device": "auto",
+              "precision": "fp32",
+              "deterministic": true,
+              "collapse_ratio": 0.05,
+              "collapse_min_std": 0.0001,
+              "collapse_min_image_std": 0.0001,
+              "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+            },
+            "probe": {
+              "epochs": 50,
+              "batch_size": 128,
+              "learning_rate": 0.05,
+              "weight_decay": 0.0,
+              "label_fraction": 1.0,
+              "knn_k": 20,
+              "knn_temperature": 0.07,
+              "spatial_steps": 300,
+              "spatial_learning_rate": 0.01
+            }
+          },
+          "seed": 0,
+          "k": 0,
+          "method": "full",
+          "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+          "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+          "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+          "run_id": "54ae3007daddc7a80f5af8c18bb61812cca9f75fded7d02200354a610dee4fde"
+        },
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1862,
+          "top5": 0.4174,
+          "knn": 0.1504
+        }
+      }
+    }
+  },
+  "config": {
+    "geometry": {
+      "mode": "native80",
+      "padding": "reflect"
+    },
+    "model": {
+      "name": "vit_small",
+      "predictor_dim": 192,
+      "predictor_depth": 2,
+      "predictor_heads": 6,
+      "relation": "none",
+      "relation_hidden": 128,
+      "relation_weight": 0.0
+    },
+    "data": {
+      "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+      "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+      "expected_classes": 100,
+      "crop_min": 0.3,
+      "crop_max": 1.0,
+      "horizontal_flip": 0.5,
+      "color_jitter": 0.2
+    },
+    "training": {
+      "steps": 20000,
+      "batch_size": 64,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.04,
+      "warmup_steps": 500,
+      "minimum_lr_ratio": 0.01,
+      "ema_start": 0.996,
+      "clip_grad": 1.0,
+      "checkpoint_every": 500,
+      "log_every": 50,
+      "num_workers": 4,
+      "device": "auto",
+      "precision": "fp32",
+      "deterministic": true,
+      "collapse_ratio": 0.05,
+      "collapse_min_std": 0.0001,
+      "collapse_min_image_std": 0.0001,
+      "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+    },
+    "probe": {
+      "epochs": 50,
+      "batch_size": 128,
+      "learning_rate": 0.05,
+      "weight_decay": 0.0,
+      "label_fraction": 1.0,
+      "knn_k": 20,
+      "knn_temperature": 0.07,
+      "spatial_steps": 300,
+      "spatial_learning_rate": 0.01
+    }
+  },
+  "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+  "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+  "representation": "FP32, eval-mode canonical 240 image, nine 80 tiles, average pooled patch/tile outputs",
+  "baseline": {
+    "lr": 0.05,
+    "epochs": 50,
+    "batch": 128,
+    "momentum": 0.9,
+    "weight_decay": 0.0
+  },
+  "grid": {
+    "learning_rates": [
+      0.005,
+      0.05,
+      0.1
+    ],
+    "epochs": [
+      50,
+      100,
+      200
+    ],
+    "anchors": [
+      "k0_student",
+      "full_student"
+    ]
+  },
+  "split": "10% unique image-content groups per class from training manifest; seed=0",
+  "conflicting_training_records": 86,
+  "internal_and_health_excluded_image_ids": [
+    "0e73574b41e1d226bc788e5cdca840e8ab3106332ee678abdf55f045229fda7f",
+    "13677668e42e6b9dcb9a40f3af1117ea231b1e89864003155a2f9bd32a6289c7",
+    "137c377acea44211ec4dffbf8b55b1000adb42680065b99f2af521a82da8ffaf",
+    "17fe24d892035e4fd2b4eca10aae82727dc0399c72a95fb5c004a852a092f89d",
+    "1a2e561cef8a71af81a0a85177162d94fd65c07c99abbf95a58a7a69fa7b39e5",
+    "1da72b6643bab7e7673ade9cd1ae2e547b6f4116cfded197b429faf936846499",
+    "200987df6c32bd54e5e2410b9499e78cc875881414aa45d9b9c2fb5122dc017e",
+    "23d8cde498d7bd02008dc8815bd435c918e36e9a80f84f5f0754dafeed3b410c",
+    "2864cf25a640992587f10969986ddbbbf9bf0a56ea9a232aff9ef05c334f2052",
+    "2c13b1e309c2ebfe484f84bb0fe8efb5b57fee87b4ffffaaef84fb549e34a117",
+    "2f30a55466084b5cc6f2eb933f4c1d6b826ac4d49a380c2cec08c12b3f93207d",
+    "309abce0983698ef2f57d21a1ce601b0f65aca21d65ba73e157f5294df5fa179",
+    "3e82fe85b0d3860e5cd2f25b7a0c98255b223b8348d7d15bfe42959b0d5f487f",
+    "407c44b86434d07ac7ab0bd73cefcb88df4ddbd48aaf0370b676e5f54a89ab2a",
+    "476551d52a95c601882c8dd57557bdcb64fc19ba786e107cc7cd730c8ef1ac69",
+    "49f00667d01a24c9472fdf71c9280a505c908cb11f2a16dfa297e3aa9181f65c",
+    "51c3b4b57ceb57fac7f0a3bbd2872694ed415fcc61a74838b72595c37e2d6dd2",
+    "78c31f32d9a54b3064df956fccf10069ecdf5220615abf7d62dcaf037188128b",
+    "7984d8b71f5bd9b3c34c79915229eeceb656866ff52e7422631c4f8370c5d038",
+    "7f8231c072b091b2bfa64d00217f022cee2ce1721b98b53358ebf6f50de126a5",
+    "80ffdae6c96e8d8a10faa6e52ee26b9116df959b8503d0ffe2a1a782aa9c12f7",
+    "819b5a162b8f27cece1e0bd7ec5ba352f5721571346df34b59fa4eb172a61e72",
+    "842cc375f66e5363ff9ad87c5513a1b902f24925807fda9ec331a1992c0712d5",
+    "8bee04a8da50919e2001bf4d98b4eda3008f45df6b097a057a44accc425c5574",
+    "91e94ae948a0c057c84fdf244a10e7adbe3af18a214c8f8f21e5cb2a7db02be9",
+    "96fe09d47289a72f1b8d9ef00b111dd50df9475a7015865e0e6f6d724b7e4ea7",
+    "980225269bdd6df7a3d107d1214e8b3873fdb5ffc03598eac0ca06fd96fd37e5",
+    "999417809a8261bc47722acc1477d08476a0aa632f5d6ee10c3079386f6c770f",
+    "a197d2cd06f62aa26973036ef4ab10e738f1185b55edebb10e8c70b959433d6f",
+    "b27486402fd6af3dc1253b590c425093681c0e16904d88d52a2275f63436d63b",
+    "b357ab56118a472484571c6fdb25e91ca8045c8ccb1b5da31ed9beb9c2ea38d8",
+    "b6aa0c6e9e5259a8cff3123d29196550af528e2e9f1aee272d8c4f1383280788",
+    "b9b7fe0cfc6cc4578afd8782c3f59bf6b428add24a3f255de8c9ebd1fa4d8812",
+    "bbc735d11f6e7a295ea40b43df3525f2021eb41ca10d3f031e356ef348197257",
+    "c67731f9eb9fc0f03fd6a9ea6429f1016906c8a478a7b6cdd2d947f8203bff2d",
+    "c830925bc2c5acdb39ebb294baa37db9e1ad781381d03397fa5393f5c0a33593",
+    "d28ed7416d8501195e2096a8da693854ada7b989ac17be3cc06854cc7818d6fd",
+    "d2b3b7a9aa65b28e306782f14844737d8f43a19a326891ae2d0bd082d90ffe52",
+    "dd960eafd9fc37340fbf463abde633217d1584bcab08164ac31aa02a4c9ca2cc",
+    "e50879622a1692ae8d4e5c08a5b39bbe2a52a0fa0c204daaa02b2f0b0ce8c122",
+    "ee08fa75a0ebf5b21e08918f2b59be3bf1bd35b7c76258ff535da27eadcd9b04",
+    "f8481a7484b8b2fb82820385767eb22a38bc55b2cdd0a4ecfec44cb0d718457b",
+    "fd88f9c0d942b3d2bc42bf41d8fac2d79a5310233097150950344865d575d186"
+  ],
+  "conflict_policy": "Exclude ambiguous labels from internal train/dev and health only; full-data refits preserve original labels",
+  "selection": "One common recipe maximizing mean internal-dev Top-1; ties fewer epochs, smaller LR",
+  "health": "100 unique training images per class; same image IDs and cosine pairs across encoders",
+  "new_pretraining": false,
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660"
+}

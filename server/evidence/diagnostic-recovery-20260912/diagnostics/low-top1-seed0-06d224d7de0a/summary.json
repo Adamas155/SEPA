@@ -1,0 +1,73 @@
+{
+  "status": "running",
+  "updated_utc": "2026-09-12T04:22:27.445957+00:00",
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660",
+  "seed": 0,
+  "baseline": {
+    "k0_student": {
+      "scores": {
+        "top1": 0.1518,
+        "top5": 0.3698,
+        "knn": 0.1132
+      },
+      "origin": "original frozen classifier replay",
+      "probe_sha256": "f24112bcc23d85e4f5cbd87a498ab262cd4fd79d79cc690a81c3b1056f770bad",
+      "exact_original_score_reproduction": true
+    }
+  },
+  "health": {
+    "k0_student": {
+      "n_images": 10000,
+      "dimension": 384,
+      "total_centered_variance": 5.974013645972308,
+      "effective_rank": 11.971695405380794,
+      "participation_rank": 7.162185591727714,
+      "explained_variance": {
+        "1": 0.2558222522145813,
+        "5": 0.7793458223565679,
+        "10": 0.8756281038120378
+      },
+      "feature_std_mean": 0.1187036657202183,
+      "feature_std_min": 0.04094135223652664,
+      "feature_std_median": 0.11289120242650469,
+      "feature_norm_mean": 18.113607802348078,
+      "cosine_raw": {
+        "same_class": {
+          "mean": 0.9843217161117845,
+          "p05": 0.965116663890812,
+          "p50": 0.9867826088851426,
+          "p95": 0.9949059992542024,
+          "n_pairs": 10000
+        },
+        "different_class": {
+          "mean": 0.9819007123523341,
+          "p05": 0.961487946053847,
+          "p50": 0.984281213907514,
+          "p95": 0.9939868939956322,
+          "n_pairs": 10000
+        }
+      },
+      "cosine_centered": {
+        "same_class": {
+          "mean": 0.12314762244908638,
+          "p05": -0.47921060452341596,
+          "p50": 0.12935191109700533,
+          "p95": 0.6975319837573969,
+          "n_pairs": 10000
+        },
+        "different_class": {
+          "mean": 0.003256515669223262,
+          "p05": -0.5495283794355967,
+          "p50": -0.0033961174065812727,
+          "p95": 0.5691906543797475,
+          "n_pairs": 10000
+        }
+      },
+      "zero_centered_variance": false,
+      "interpretation": "Descriptive train-only measures; compare with matched random encoder. No pass threshold."
+    }
+  },
+  "selection": null,
+  "selected_recipe_results": {},
+  "interpretation": "Single-seed diagnostics. No additional pretraining or multi-seed confidence estimate."
+}

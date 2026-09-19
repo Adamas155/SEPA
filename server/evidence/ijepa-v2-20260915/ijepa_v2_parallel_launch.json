@@ -1,0 +1,14 @@
+{
+  "pid": 19947,
+  "command": [
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/.venv/bin/python",
+    "-u",
+    "server/coordinate_ijepa_v2_parallel.py"
+  ],
+  "utc": "2026-09-14T16:49:57.965130+00:00",
+  "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c",
+  "existing_k0_pid": 19351,
+  "mode": "parallel_k0_k3_then_evaluate",
+  "coordinator_sha": "a2c4a82a480c6aac6041b055976d0d8836fd4cb1487226ac88fc21191e0f977c",
+  "shutdown_on_success": false
+}

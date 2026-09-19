@@ -1,0 +1,13 @@
+{
+  "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f",
+  "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f/latest.pt",
+  "step": 20000,
+  "complete": true,
+  "elapsed_seconds_this_invocation": 2332.218349456787,
+  "trainable_parameters": 22627968,
+  "device": "cuda",
+  "torch_version": "2.8.0+cu128",
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "peak_cuda_memory_bytes": 4393285120
+}

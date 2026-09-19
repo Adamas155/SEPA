@@ -1,0 +1,344 @@
+{
+  "pid": null,
+  "started_utc": "2026-09-11T08:33:11.737248+00:00",
+  "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+  "completed_jobs": [
+    {
+      "job": {
+        "seed": 0,
+        "k": 0,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2313.4410634040833,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4762582016
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1518,
+          "top5": 0.3698,
+          "knn": 0.1132
+        }
+      }
+    },
+    {
+      "job": {
+        "seed": 0,
+        "k": 3,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2210.134220123291,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4401989120
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1726,
+          "top5": 0.4032,
+          "knn": 0.1176
+        }
+      }
+    },
+    {
+      "job": {
+        "seed": 0,
+        "k": 6,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2332.218349456787,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4393285120
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.18,
+          "top5": 0.419,
+          "knn": 0.1262
+        }
+      }
+    },
+    {
+      "job": {
+        "seed": 0,
+        "k": 0,
+        "method": "full"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2289.259127140045,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4393812992
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1862,
+          "top5": 0.4174,
+          "knn": 0.1504
+        }
+      }
+    }
+  ],
+  "preflight": [
+    {
+      "job": {
+        "seed": 0,
+        "k": 3,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/latest.pt",
+        "step": 1000,
+        "complete": false,
+        "elapsed_seconds_this_invocation": 116.9348578453064,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4399521280
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/probe-3374b74f07f3.json",
+        "schema": 1,
+        "checkpoint_step": 1000,
+        "complete_pretraining": false,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "d0dd76f5ba85d5089c622ca8b8f9c2d28e4ed17d890b5fb00df23b10cb1ea8e8",
+        "label_fraction": 1.0,
+        "n_train_labels": 1000,
+        "n_val": 1000,
+        "limit": 1000,
+        "scores": {
+          "top1": 0.057,
+          "top5": 0.194,
+          "knn": 0.044
+        }
+      },
+      "elapsed_seconds": 7.203064005821943
+    },
+    {
+      "job": {
+        "seed": 0,
+        "k": 0,
+        "method": "full"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/latest.pt",
+        "step": 300,
+        "complete": false,
+        "elapsed_seconds_this_invocation": 36.33271288871765,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4760138240
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/probe-39df7fb1ba4c.json",
+        "schema": 1,
+        "checkpoint_step": 300,
+        "complete_pretraining": false,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "d0dd76f5ba85d5089c622ca8b8f9c2d28e4ed17d890b5fb00df23b10cb1ea8e8",
+        "label_fraction": 1.0,
+        "n_train_labels": 1000,
+        "n_val": 1000,
+        "limit": 1000,
+        "scores": {
+          "top1": 0.061,
+          "top5": 0.188,
+          "knn": 0.039
+        }
+      },
+      "elapsed_seconds": 6.295435152947903
+    }
+  ],
+  "phase": "pilot_complete",
+  "updated_utc": "2026-09-11T12:22:35.527529+00:00",
+  "preflight_target_step": 300,
+  "current_job": null,
+  "current_run": null,
+  "job_index": null,
+  "n_jobs": 4,
+  "selected_seeds": [
+    0
+  ],
+  "unselected_completed_jobs": [
+    {
+      "job": {
+        "seed": 1,
+        "k": 0,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s1-d50aca05944a",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s1-d50aca05944a/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2350.288281917572,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4393285120
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s1-d50aca05944a/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1558,
+          "top5": 0.3576,
+          "knn": 0.1002
+        }
+      }
+    },
+    {
+      "job": {
+        "seed": 1,
+        "k": 3,
+        "method": "sepa"
+      },
+      "train": {
+        "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s1-19482c025b6c",
+        "checkpoint": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s1-19482c025b6c/latest.pt",
+        "step": 20000,
+        "complete": true,
+        "elapsed_seconds_this_invocation": 2353.8418641090393,
+        "trainable_parameters": 22627968,
+        "device": "cuda",
+        "torch_version": "2.8.0+cu128",
+        "cuda_version": "12.8",
+        "gpu_name": "NVIDIA GeForce RTX 5090",
+        "peak_cuda_memory_bytes": 4393285120
+      },
+      "probe": {
+        "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s1-19482c025b6c/probe.json",
+        "schema": 1,
+        "checkpoint_step": 20000,
+        "complete_pretraining": true,
+        "transfer": false,
+        "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+        "label_fraction": 1.0,
+        "n_train_labels": 126684,
+        "n_val": 5000,
+        "limit": 0,
+        "scores": {
+          "top1": 0.1696,
+          "top5": 0.3854,
+          "knn": 0.1016
+        }
+      }
+    }
+  ],
+  "interrupted_job": {
+    "seed": 1,
+    "k": 6,
+    "method": "sepa"
+  },
+  "last_driver_pid": 8347,
+  "completed_utc": "2026-09-11T12:19:13.596127+00:00",
+  "stop_reason": "User requested one seed to inspect trends first",
+  "summary": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/single_seed_summary.json"
+}

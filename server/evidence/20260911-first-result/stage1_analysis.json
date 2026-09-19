@@ -1,0 +1,14 @@
+{
+  "arms": {
+    "k0": {
+      "seeds": [
+        0
+      ],
+      "mean_top1": 0.1518
+    }
+  },
+  "comparisons": {},
+  "delta_pp": 1.0,
+  "status": "INSUFFICIENT",
+  "interpretation": "Exploratory paired bootstrap shown separately from roadmap's point-estimate gate; not proof that spatial corruption generally works or fails."
+}

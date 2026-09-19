@@ -1,0 +1,22 @@
+{
+  "pid": 5161,
+  "job": {
+    "kind": "selected",
+    "variant": "k0_teacher",
+    "recipe": {
+      "learning_rate": 0.005,
+      "epochs": 200
+    },
+    "id": "k0_teacher"
+  },
+  "started_utc": "2026-09-12T05:27:46.855401+00:00",
+  "status": "running",
+  "event": "fit",
+  "updated_utc": "2026-09-12T05:30:56.288892+00:00",
+  "cache": "k0_teacher-val.pt",
+  "epoch": 85,
+  "online_train_loss": 3.4298781746018205,
+  "online_train_top1": 0.20746108427267848,
+  "epochs": 200,
+  "elapsed_seconds": 187.2032391577959
+}

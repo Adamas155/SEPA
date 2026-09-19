@@ -1,0 +1,13 @@
+{
+  "pid": 19947,
+  "utc": "2026-09-14T16:50:42.064739+00:00",
+  "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c",
+  "k0_pid": 19351,
+  "k3_pid": 19951,
+  "shutdown_on_success": false,
+  "phase": "parallel_training",
+  "k0_step": 2975,
+  "k3_step": 150,
+  "k0_complete": false,
+  "k3_complete": false
+}

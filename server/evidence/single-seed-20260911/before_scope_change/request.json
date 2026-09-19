@@ -1,0 +1,14 @@
+{
+  "requested_utc": "2026-09-11T12:14:48.726168+00:00",
+  "selected_seeds": [
+    0
+  ],
+  "reason": "User requested one seed to inspect trends first",
+  "previous_pid": 8347,
+  "previous_job": {
+    "seed": 1,
+    "k": 6,
+    "method": "sepa"
+  },
+  "previous_completed_jobs": 6
+}

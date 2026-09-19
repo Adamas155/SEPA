@@ -1,0 +1,6 @@
+{
+  "pid": 22147,
+  "log": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/diagnostics-20260911T151900Z.log",
+  "started_utc": "20260911T151900Z",
+  "command": "server/run_diagnostics.py --project /root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b"
+}

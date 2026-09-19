@@ -1,0 +1,63 @@
+{
+  "pid": 5157,
+  "started_utc": "2026-09-12T05:27:45.698162+00:00",
+  "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/diagnostics/low-top1-seed0-06d224d7de0a",
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660",
+  "seed": 0,
+  "workers": 3,
+  "completed_baselines": [
+    "k0_student",
+    "k0_teacher",
+    "random_tile",
+    "full_student",
+    "full_teacher",
+    "random_full",
+    "k3_student",
+    "k3_teacher",
+    "k6_student",
+    "k6_teacher"
+  ],
+  "completed_sweeps": [
+    "k0_student-lr0.005",
+    "k0_student-lr0.05",
+    "k0_student-lr0.1",
+    "full_student-lr0.005",
+    "full_student-lr0.05",
+    "full_student-lr0.1"
+  ],
+  "completed_final": [],
+  "active_workers": [
+    {
+      "pid": 5160,
+      "job": "k0_student",
+      "epoch": 80,
+      "epochs": 200,
+      "status": "running",
+      "updated_utc": "2026-09-12T05:30:47.144594+00:00"
+    },
+    {
+      "pid": 5161,
+      "job": "k0_teacher",
+      "epoch": 80,
+      "epochs": 200,
+      "status": "running",
+      "updated_utc": "2026-09-12T05:30:45.207410+00:00"
+    },
+    {
+      "pid": 5162,
+      "job": "random_tile",
+      "epoch": 80,
+      "epochs": 200,
+      "status": "running",
+      "updated_utc": "2026-09-12T05:30:46.867129+00:00"
+    }
+  ],
+  "phase": "parallel_selected_recipe_fit",
+  "updated_utc": "2026-09-12T05:30:55.759099+00:00",
+  "completed_job": "full_student-lr0.1",
+  "recipe": {
+    "learning_rate": 0.005,
+    "epochs": 200
+  },
+  "pending_jobs": 7
+}

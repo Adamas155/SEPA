@@ -1,0 +1,15 @@
+{
+  "pid": 2129,
+  "command": [
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/.venv/bin/python",
+    "-u",
+    "server/train_ijepa_local_student.py"
+  ],
+  "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs-ijepa/local-student-global-teacher-s0-3e44ae15a866",
+  "run_id": "3e44ae15a866f0dc00fda530bd8782c21925577a619e496dfaf784d7cd36793c",
+  "utc": "2026-09-14T05:25:34.652232+00:00",
+  "ssh_port": 47026,
+  "host": "connect.westb.seetacloud.com",
+  "shutdown_on_success": false,
+  "smoke_receipt_sha": "533773c3b01b2e4ebaaa0e115f1596852ead8480090ed4e78079fd648e9d7841"
+}

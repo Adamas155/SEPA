@@ -1,0 +1,21 @@
+{
+  "pid": 19340,
+  "command": [
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/.venv/bin/python",
+    "-u",
+    "server/train_ijepa_v2.py"
+  ],
+  "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c",
+  "utc": "2026-09-14T16:42:41.003268+00:00",
+  "host": "connect.westb.seetacloud.com",
+  "ssh_port": 47026,
+  "arms": [
+    "k0",
+    "k3"
+  ],
+  "screen_epochs": 25,
+  "sequential": true,
+  "imageNet100_val_used": false,
+  "shutdown_on_success": false,
+  "smoke_sha": "e0bcf4b0aec501501622e91b1e4d01489ebe04adbe504d7886017da765715537"
+}

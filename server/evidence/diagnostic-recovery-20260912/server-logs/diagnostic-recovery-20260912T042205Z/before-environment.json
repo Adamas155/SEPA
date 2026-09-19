@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "file_limit": {
+    "soft_before": 1024,
+    "soft": 65536,
+    "hard": 1048576
+  }
+}

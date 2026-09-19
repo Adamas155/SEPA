@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sepa-plan-b"
+version = "0.1.0"
+description = "Independent SEPA controlled spatial corruption experiments"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.4", "Pillow>=10", "numpy>=1.26"]
+
+[project.scripts]
+sepa = "sepa_plan_b.commands:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

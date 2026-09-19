@@ -1,0 +1,9 @@
+{
+  "pid": 2352,
+  "log": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/ijepa-20260913T104816Z.log",
+  "utc": "20260913T104816Z",
+  "host": "connect.westb.seetacloud.com",
+  "port": 39999,
+  "run_id": "3e242d05b38e789016cceb96b7c1d55983842c5d640b508965442a6576b8558f",
+  "shutdown_on_success": true
+}

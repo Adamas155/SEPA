@@ -1,0 +1,81 @@
+{
+  "pid": 2217,
+  "started_utc": "2026-09-12T04:22:21.556564+00:00",
+  "seed": 0,
+  "completed_baselines": [
+    "k0_student",
+    "k0_teacher",
+    "random_tile",
+    "full_student",
+    "full_teacher",
+    "random_full",
+    "k3_student",
+    "k3_teacher",
+    "k6_student",
+    "k6_teacher"
+  ],
+  "completed_sweeps": [
+    "k0_student-lr0.005",
+    "k0_student-lr0.05",
+    "k0_student-lr0.1",
+    "full_student-lr0.005",
+    "full_student-lr0.05",
+    "full_student-lr0.1"
+  ],
+  "completed_final": [],
+  "phase": "selected_recipe_fit",
+  "updated_utc": "2026-09-12T05:27:42.876947+00:00",
+  "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/diagnostics/low-top1-seed0-06d224d7de0a",
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660",
+  "variant": "k0_student",
+  "split": "val",
+  "event": "fit",
+  "cache": "k0_student-val.pt",
+  "scores": {
+    "top1": 0.1828,
+    "top5": 0.4204,
+    "knn": 0.1196
+  },
+  "batch": 40,
+  "batches": 40,
+  "elapsed_seconds": 177.65773949911818,
+  "recipe": {
+    "learning_rate": 0.005,
+    "epochs": 200
+  },
+  "epoch": 110,
+  "online_train_loss": 3.393217233918787,
+  "online_train_top1": 0.21554418868996875,
+  "epochs": 200,
+  "learning_rate": 0.1,
+  "dev_scores": [
+    {
+      "epoch": 50,
+      "online_train_loss": 3.7254581646034888,
+      "online_train_top1": 0.20646010708329676,
+      "dev_scores": {
+        "top1": 0.1865329965266814,
+        "top5": 0.4126934006946637
+      }
+    },
+    {
+      "epoch": 100,
+      "online_train_loss": 3.728730673594522,
+      "online_train_top1": 0.208908979197753,
+      "dev_scores": {
+        "top1": 0.180770445216293,
+        "top5": 0.4080359962109252
+      }
+    },
+    {
+      "epoch": 200,
+      "online_train_loss": 3.7322690417096287,
+      "online_train_top1": 0.20561748442025804,
+      "dev_scores": {
+        "top1": 0.18763814335333123,
+        "top5": 0.41324597410798863
+      }
+    }
+  ],
+  "sweep": "full_student-lr0.1"
+}

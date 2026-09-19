@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-12T05:27:45.697913+00:00",
+  "pid": 5157,
+  "workers": 3,
+  "cpu_threads_per_worker": 8,
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660",
+  "runner_sha256": "d6c1b91602eab87aecf68b5863ea4882a8fc0a5e48ea7276641c36224049dd88",
+  "original_fit_function": "diagnostic_lib.fit_trajectory (unchanged)",
+  "seed": 0
+}

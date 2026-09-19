@@ -1,0 +1,60 @@
+{
+  "arms": {
+    "k0": {
+      "seeds": [
+        0,
+        1
+      ],
+      "mean_top1": 0.1538
+    },
+    "k3": {
+      "seeds": [
+        0,
+        1
+      ],
+      "mean_top1": 0.1711
+    },
+    "k6": {
+      "seeds": [
+        0
+      ],
+      "mean_top1": 0.18
+    },
+    "full": {
+      "seeds": [
+        0
+      ],
+      "mean_top1": 0.1862
+    }
+  },
+  "comparisons": {
+    "k3_minus_k0": {
+      "paired_seeds": [
+        0,
+        1
+      ],
+      "mean_pp": 1.730000000000001,
+      "bootstrap_95ci_pp": [
+        1.3800000000000008,
+        2.0800000000000014
+      ]
+    },
+    "k3_minus_k6": {
+      "paired_seeds": [
+        0
+      ],
+      "mean_pp": -0.739999999999999,
+      "bootstrap_95ci_pp": null
+    },
+    "k3_minus_full": {
+      "paired_seeds": [
+        0
+      ],
+      "mean_pp": -1.36,
+      "bootstrap_95ci_pp": null
+    }
+  },
+  "delta_pp": 1.0,
+  "status": "INSUFFICIENT",
+  "interpretation": "Exploratory paired bootstrap shown separately from roadmap's point-estimate gate; not proof that spatial corruption generally works or fails."
+}

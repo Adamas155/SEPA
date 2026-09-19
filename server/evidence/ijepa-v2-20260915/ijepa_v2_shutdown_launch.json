@@ -1,0 +1,13 @@
+{
+  "pid": 21746,
+  "command": [
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/.venv/bin/python",
+    "-u",
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server/shutdown_after_ijepa_v2.py"
+  ],
+  "utc": "2026-09-14T17:43:20.505186+00:00",
+  "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c",
+  "script_sha": "55ede593778010cae9abd894bac492c9406d8ed9f10a21b2a2c38336de98c2eb",
+  "user_requested": true,
+  "shutdown_only_after_verified_success": true
+}

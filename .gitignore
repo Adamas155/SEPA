@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SEPA experiment artifacts
+*.pyc
+/data/
+/runs/
+/runs-*/
+/server-logs/
+/vendor/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+.venv/
+.sepa_report_preview/
+.idea/
+.vscode/
+.env.*
+!.env.example
+!/server/evidence/**/*.log

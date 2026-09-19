@@ -1,0 +1,19 @@
+{
+  "pid": 5157,
+  "previous_serial_pid": 2217,
+  "workers": 3,
+  "cpu_threads_per_worker": 8,
+  "log": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/parallel-diagnostics-20260912T052743Z.log",
+  "evidence": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/parallel-handoff-20260912T052743Z",
+  "started_utc": "20260912T052743Z",
+  "command": [
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/.venv/bin/python",
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server/parallel_diagnostics.py",
+    "--project",
+    "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b",
+    "--workers",
+    "3"
+  ],
+  "runner_sha256": "d6c1b91602eab87aecf68b5863ea4882a8fc0a5e48ea7276641c36224049dd88",
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660"
+}

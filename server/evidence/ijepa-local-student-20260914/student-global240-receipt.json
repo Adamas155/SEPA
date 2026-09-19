@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "run_id": "3e44ae15a866f0dc00fda530bd8782c21925577a619e496dfaf784d7cd36793c",
+    "checkpoint_sha": "d7b746eba0ffae724358abbc0444e6d7339c4e14d8fc17b624bddeb3bf9f1c18",
+    "branch": "student",
+    "scope": "global240",
+    "evaluation": {
+      "branches": [
+        "student",
+        "teacher"
+      ],
+      "scopes": [
+        "local80",
+        "global240"
+      ],
+      "probe": {
+        "epochs": 200,
+        "batch_size": 128,
+        "learning_rate": 0.005,
+        "weight_decay": 0.0,
+        "label_fraction": 1.0,
+        "knn_k": 20,
+        "knn_temperature": 0.07,
+        "spatial_steps": 300,
+        "spatial_learning_rate": 0.01
+      },
+      "precision": "fp32",
+      "pooling": "mean of all 225 outputs in raster order"
+    }
+  },
+  "result_sha": "5c86df5d85c2f093bca798cb8519bf26e6f84a7f8bba252d4405119dd4781242",
+  "head_sha": "45449f723fcfacc716c7fa4b0dd1a48f56c28c3a92186b144a41ff8c43c13ed8"
+}

@@ -1,0 +1,14 @@
+test_ambiguous_groups_are_explicitly_excluded_from_both_partitions (__main__.DiagnosticTests.test_ambiguous_groups_are_explicitly_excluded_from_both_partitions) ... ok
+test_cache_identity_label_order_and_checksum (__main__.DiagnosticTests.test_cache_identity_label_order_and_checksum) ... ok
+test_dev_features_do_not_fit_normalization_or_head (__main__.DiagnosticTests.test_dev_features_do_not_fit_normalization_or_head) ... ok
+test_group_split_and_health_sample (__main__.DiagnosticTests.test_group_split_and_health_sample) ... ok
+test_instrumented_fit_exactly_matches_original (__main__.DiagnosticTests.test_instrumented_fit_exactly_matches_original) ... ok
+test_random_initialization_is_training_initialization (__main__.DiagnosticTests.test_random_initialization_is_training_initialization) ... ok
+test_selection_is_shared_dev_only_and_ties_are_fixed (__main__.DiagnosticTests.test_selection_is_shared_dev_only_and_ties_are_fixed) ... ok
+test_spectrum_detects_constant_and_rank_one (__main__.DiagnosticTests.test_spectrum_detects_constant_and_rank_one) ... ok
+test_student_teacher_dispatch_and_no_state_mutation (__main__.DiagnosticTests.test_student_teacher_dispatch_and_no_state_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.923s
+
+OK

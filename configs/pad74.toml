@@ -1,0 +1,47 @@
+# Same starting training recipe as native80; only tile geometry changes.
+[geometry]
+mode = "pad74"
+padding = "reflect"
+
+[model]
+name = "vit_small"
+predictor_dim = 192
+predictor_depth = 2
+predictor_heads = 6
+relation = "none"
+relation_weight = 0.0
+
+[data]
+train_manifest = "../data/imagenet100/train.json"
+val_manifest = "../data/imagenet100/val.json"
+expected_classes = 100
+crop_min = 0.3
+crop_max = 1.0
+horizontal_flip = 0.5
+color_jitter = 0.2
+
+[training]
+steps = 20000
+batch_size = 64
+learning_rate = 0.0001
+weight_decay = 0.04
+warmup_steps = 500
+ema_start = 0.996
+checkpoint_every = 500
+log_every = 50
+num_workers = 4
+device = "auto"
+precision = "fp32"
+# Numerical-collapse warning thresholds, not scientific pass criteria.
+collapse_ratio = 0.05
+collapse_min_std = 0.0001
+collapse_min_image_std = 0.0001
+output_root = "../runs"
+
+[probe]
+epochs = 50
+batch_size = 128
+learning_rate = 0.05
+label_fraction = 1.0
+knn_k = 20
+spatial_steps = 300

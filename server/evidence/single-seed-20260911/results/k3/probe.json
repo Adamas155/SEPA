@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "metadata": {
+    "schema": 1,
+    "config": {
+      "geometry": {
+        "mode": "native80",
+        "padding": "reflect"
+      },
+      "model": {
+        "name": "vit_small",
+        "predictor_dim": 192,
+        "predictor_depth": 2,
+        "predictor_heads": 6,
+        "relation": "none",
+        "relation_hidden": 128,
+        "relation_weight": 0.0
+      },
+      "data": {
+        "train_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/train.json",
+        "val_manifest": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/data/imagenet100/val.json",
+        "expected_classes": 100,
+        "crop_min": 0.3,
+        "crop_max": 1.0,
+        "horizontal_flip": 0.5,
+        "color_jitter": 0.2
+      },
+      "training": {
+        "steps": 20000,
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.04,
+        "warmup_steps": 500,
+        "minimum_lr_ratio": 0.01,
+        "ema_start": 0.996,
+        "clip_grad": 1.0,
+        "checkpoint_every": 500,
+        "log_every": 50,
+        "num_workers": 4,
+        "device": "auto",
+        "precision": "fp32",
+        "deterministic": true,
+        "collapse_ratio": 0.05,
+        "collapse_min_std": 0.0001,
+        "collapse_min_image_std": 0.0001,
+        "output_root": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs"
+      },
+      "probe": {
+        "epochs": 50,
+        "batch_size": 128,
+        "learning_rate": 0.05,
+        "weight_decay": 0.0,
+        "label_fraction": 1.0,
+        "knn_k": 20,
+        "knn_temperature": 0.07,
+        "spatial_steps": 300,
+        "spatial_learning_rate": 0.01
+      }
+    },
+    "seed": 0,
+    "k": 3,
+    "method": "sepa",
+    "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+    "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+    "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+    "run_id": "4adbf4439def30778d9579a6f34fecb2fc2f2fd07110b69ed6f3f89b1edc7a21"
+  },
+  "checkpoint_step": 20000,
+  "complete_pretraining": true,
+  "transfer": false,
+  "train_manifest": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+  "val_manifest": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+  "evaluation_ids_hash": "e09ad99577785952ab80294ffb9df8b4dbb021d1087c2f3b3939901a8ed36291",
+  "label_fraction": 1.0,
+  "n_train_labels": 126684,
+  "n_val": 5000,
+  "limit": 0,
+  "scores": {
+    "top1": 0.1726,
+    "top5": 0.4032,
+    "knn": 0.1176
+  }
+}

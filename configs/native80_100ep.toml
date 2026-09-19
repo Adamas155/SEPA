@@ -1,0 +1,49 @@
+# Seed-0 long-training experiment. 126,684 images / batch 64 = 1,980
+# optimizer steps per epoch, so 198,000 steps is exactly 100 data epochs.
+[geometry]
+mode = "native80"
+
+[model]
+name = "vit_small"
+predictor_dim = 192
+predictor_depth = 2
+predictor_heads = 6
+relation = "none"
+relation_weight = 0.0
+
+[data]
+train_manifest = "../data/imagenet100/train.json"
+val_manifest = "../data/imagenet100/val.json"
+expected_classes = 100
+crop_min = 0.3
+crop_max = 1.0
+horizontal_flip = 0.5
+color_jitter = 0.2
+
+[training]
+steps = 198000
+batch_size = 64
+learning_rate = 0.0001
+weight_decay = 0.04
+# Preserve the original 500 / 20,000 = 2.5% warmup fraction.
+warmup_steps = 4950
+ema_start = 0.996
+checkpoint_every = 1980
+log_every = 50
+num_workers = 4
+device = "auto"
+precision = "fp32"
+collapse_ratio = 0.05
+collapse_min_std = 0.0001
+collapse_min_image_std = 0.0001
+output_root = "../runs-long100"
+
+[probe]
+# Recipe selected on the frozen internal development split in the seed-0
+# classifier diagnostic. It is recorded here for the eventual uniform probe.
+epochs = 200
+batch_size = 128
+learning_rate = 0.005
+label_fraction = 1.0
+knn_k = 20
+spatial_steps = 300

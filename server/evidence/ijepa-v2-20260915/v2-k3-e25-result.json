@@ -1,0 +1,277 @@
+{
+  "identity": {
+    "shared": {
+      "schema": 1,
+      "experiment": "sepa_v2_25epoch_screen",
+      "baseline": {
+        "config": {
+          "schema": 1,
+          "seed": 0,
+          "upstream_commit": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+          "model": "vit_small",
+          "image_size": 240,
+          "patch_size": 16,
+          "predictor_depth": 6,
+          "predictor_dim": 384,
+          "epochs": 100,
+          "batch_size": 64,
+          "learning_rate": 0.0001,
+          "start_lr": 0.0,
+          "final_lr": 1e-06,
+          "warmup_epochs": 2.5,
+          "weight_decay": 0.04,
+          "final_weight_decay": 0.4,
+          "ema_start": 0.996,
+          "precision": "bf16",
+          "workers": 8,
+          "cpu_threads": 8,
+          "milestones": [
+            10,
+            25,
+            50,
+            100
+          ],
+          "mask": {
+            "enc_mask_scale": [
+              0.85,
+              1.0
+            ],
+            "pred_mask_scale": [
+              0.15,
+              0.2
+            ],
+            "aspect_ratio": [
+              0.75,
+              1.5
+            ],
+            "nenc": 1,
+            "npred": 4,
+            "min_keep": 10,
+            "allow_overlap": false
+          },
+          "description": "Official I-JEPA algorithm adapted to the same ImageNet-100 images, ViT-S/16, 240px, batch64 and 100 epochs. This is not the published ImageNet-1K recipe or an equal-FLOP comparison.",
+          "differences_from_sepa": [
+            "Official patch-level multiblock prediction, target LayerNorm and Smooth L1 loss.",
+            "Official 6-layer/384-width predictor, larger than SEPA's 2-layer/192-width predictor.",
+            "Official RandomResizedCrop scale 0.3-1.0, bilinear; no flip, color jitter or blur.",
+            "Official weight-decay exclusions and cosine schedule 0.04 to 0.4; linear EMA 0.996 to 1; no gradient clipping.",
+            "Peak LR, warmup fraction, batch, image IDs and epoch count matched to SEPA; this single run does not establish optimal I-JEPA hyperparameters.",
+            "Official bf16 autocast, FP32 parameters; final feature extraction and probes FP32. SEPA pretraining was FP32.",
+            "Manifest data adapter keeps the final short batch, deterministic per-image augmentation and per-batch masks; rejects overlap if the upstream sampler relaxes its constraint.",
+            "Final evaluation reuses SEPA's center-square bicubic resize, train-only feature standardization and frozen SGD LR0.005/200-epoch classifier. No official-validation-based checkpoint or hyperparameter selection."
+          ]
+        },
+        "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+        "core_sha": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+        "upstream": {
+          "commit": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+          "archive_sha256": "00fa10a14d12a772b9479d1ba0d8422eab2c4db053d01e472c7378b6260fcbd2",
+          "python_files": {
+            "main.py": "854fe0b12ec8d4986fcf279a89774310b5e1699678e75e07ff0b0e96b1d266a3",
+            "main_distributed.py": "8d9b9e4f16df8153d377f7d2c55b0b1d7bf308b96c3503791d5b7cee1ba3fe46",
+            "src/helper.py": "bd9854f2d4143ce82160b36af5ebd4d9f5462087c2afc7722168ccf20c4c9f06",
+            "src/train.py": "6b5467b6663ace871ede718168b152d6759a2ec26b94bb688ae6e46c80e835aa",
+            "src/transforms.py": "441acaef22ca3bd121f98f95bfcad2b271ecacef0ab4ba72d4f3dc28c57fd44c",
+            "src/datasets/imagenet1k.py": "41509bf7d154f10f6c233714b8a9e86a430333eca931f797119e08844f767f87",
+            "src/masks/default.py": "1d38246d4bc3a4a359dded532bdb71f3a29b112dec888ba4bc9944deb506a3a2",
+            "src/masks/multiblock.py": "a06c593636f81e760bd26b615b2a7a976790dcc027d4b9244f3e8e7a2e5a8804",
+            "src/masks/random.py": "9b5f2e538b208b396e1811acddde352b76123d2b7f982277c9bc226d83333925",
+            "src/masks/utils.py": "124da04a7513329a14793389d89a98db87498caf7623a10bc772b097c74d97ec",
+            "src/models/vision_transformer.py": "69be453a6367460fd0c94588af6531c022a2469ff72e0a793c16fd110dd498c0",
+            "src/utils/distributed.py": "292eeb63ff515eec39603ff7170dedbfe87dab0eb204c3ad32fc767031da5210",
+            "src/utils/logging.py": "fc3c2417e33a49e728b56d1b811fb8047fc75e7b9f0074159d6ba84ad2366133",
+            "src/utils/schedulers.py": "0e26275a7fc43ee4ba1d77f39100dead7a9a7ae7f180b740e11b31143df77b6d",
+            "src/utils/tensors.py": "66cac858005d01e93ad6f481f384a9d75cb1fb8ad2bff0fd7e9a127f384429c0"
+          }
+        },
+        "adapter_sha": "47971b459e121a8aafd6e80f76496801fa5b266cad6b2434be60d9cbc10881e0",
+        "diagnostic_sha": "368ce3d8c4d052d5fb1e8744332e96df90163434bb953cc4ffdbc79636194611",
+        "run_id": "3e242d05b38e789016cceb96b7c1d55983842c5d640b508965442a6576b8558f"
+      },
+      "baseline_config": {
+        "schema": 1,
+        "seed": 0,
+        "upstream_commit": "52c1ae95d05f743e000e8f10a1f3a79b10cff048",
+        "model": "vit_small",
+        "image_size": 240,
+        "patch_size": 16,
+        "predictor_depth": 6,
+        "predictor_dim": 384,
+        "epochs": 100,
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "start_lr": 0.0,
+        "final_lr": 1e-06,
+        "warmup_epochs": 2.5,
+        "weight_decay": 0.04,
+        "final_weight_decay": 0.4,
+        "ema_start": 0.996,
+        "precision": "bf16",
+        "workers": 8,
+        "cpu_threads": 8,
+        "milestones": [
+          10,
+          25,
+          50,
+          100
+        ],
+        "mask": {
+          "enc_mask_scale": [
+            0.85,
+            1.0
+          ],
+          "pred_mask_scale": [
+            0.15,
+            0.2
+          ],
+          "aspect_ratio": [
+            0.75,
+            1.5
+          ],
+          "nenc": 1,
+          "npred": 4,
+          "min_keep": 10,
+          "allow_overlap": false
+        },
+        "description": "Official I-JEPA algorithm adapted to the same ImageNet-100 images, ViT-S/16, 240px, batch64 and 100 epochs. This is not the published ImageNet-1K recipe or an equal-FLOP comparison.",
+        "differences_from_sepa": [
+          "Official patch-level multiblock prediction, target LayerNorm and Smooth L1 loss.",
+          "Official 6-layer/384-width predictor, larger than SEPA's 2-layer/192-width predictor.",
+          "Official RandomResizedCrop scale 0.3-1.0, bilinear; no flip, color jitter or blur.",
+          "Official weight-decay exclusions and cosine schedule 0.04 to 0.4; linear EMA 0.996 to 1; no gradient clipping.",
+          "Peak LR, warmup fraction, batch, image IDs and epoch count matched to SEPA; this single run does not establish optimal I-JEPA hyperparameters.",
+          "Official bf16 autocast, FP32 parameters; final feature extraction and probes FP32. SEPA pretraining was FP32.",
+          "Manifest data adapter keeps the final short batch, deterministic per-image augmentation and per-batch masks; rejects overlap if the upstream sampler relaxes its constraint.",
+          "Final evaluation reuses SEPA's center-square bicubic resize, train-only feature standardization and frozen SGD LR0.005/200-epoch classifier. No official-validation-based checkpoint or hyperparameter selection."
+        ]
+      },
+      "v2_config": {
+        "schema": 1,
+        "seed": 0,
+        "screen_epochs": 25,
+        "branch_period": 4,
+        "local_branch_residue": 3,
+        "global_batch_fraction": 0.75,
+        "local_batch_fraction": 0.25,
+        "arms": [
+          "k0",
+          "k3"
+        ],
+        "grid_side": 3,
+        "tile_size": 80,
+        "patch_size": 16,
+        "hidden_noncenter_tiles": 2,
+        "center_anchor": 4,
+        "internal_dev_fraction": 0.1,
+        "description": "SEPA V2 screen. Three standard global I-JEPA batches alternate with one tile-local canonical-prediction batch. K0 and k3 differ only in the controlled permutation on local batches. The clean EMA teacher is global, all targets remain patch-level, and the official 6x384 predictor and optimizer recipe are unchanged."
+      },
+      "script_sha": "b86ef62688006759a918e20bf12e97c9683011b16de83af6fdfafe98b691f523",
+      "test_sha": "c154e0325945e5988574bfc0110b19933cdaa97a638e2d6ddeeb711e777f1a19",
+      "config_sha": "d9f9a9dc387ca29610c917bc4ddf58a1f9a26ba879afcf2c881eb70e28a11c51",
+      "data": {
+        "train": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+        "val": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4"
+      },
+      "global_branch": "unchanged official I-JEPA forward, masks, target, loss and update",
+      "local_branch": {
+        "student": "seven independent native 80px tiles; 25 patch tokens each; repeated local 5x5 PE; no slot identity",
+        "teacher": "clean global 240px EMA teacher",
+        "predictor": "unchanged official 6-layer 384-wide predictor; observed context PE and canonical target PE",
+        "target": "all 25 patch embeddings in each of two hidden noncenter canonical tiles",
+        "loss": "teacher output LayerNorm plus mean Smooth L1, identical to global branch"
+      },
+      "screen_evaluation": {
+        "data": "deterministic grouped 90/10 split of training manifest; conflicting duplicate groups excluded",
+        "encoder": "global student",
+        "probe": {
+          "epochs": 200,
+          "batch_size": 128,
+          "learning_rate": 0.005,
+          "weight_decay": 0.0,
+          "label_fraction": 1.0,
+          "knn_k": 20,
+          "knn_temperature": 0.07,
+          "spatial_steps": 300,
+          "spatial_learning_rate": 0.01
+        },
+        "imageNet100_val_used": false
+      },
+      "shutdown_on_success": false,
+      "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c"
+    },
+    "candidate": "v2-k3-e25",
+    "checkpoint_sha": "2f59bb6a0c543e4c2e885506c94cf28b4c39217121c1c80efb2bc189172b4427",
+    "checkpoint_step": 49500,
+    "branch": "global_student",
+    "split": "grouped_train_internal_dev"
+  },
+  "scores": {
+    "top1": 0.4692137669718977,
+    "top5": 0.7542627091885065,
+    "knn": 0.3680928323334386
+  },
+  "feature_health": {
+    "n_images": 10000,
+    "dimension": 384,
+    "total_centered_variance": 59.16304123496434,
+    "effective_rank": 34.73698100824975,
+    "participation_rank": 18.975192418819045,
+    "explained_variance": {
+      "1": 0.12236107393899777,
+      "5": 0.4429440894566563,
+      "10": 0.6348899773148341
+    },
+    "feature_std_mean": 0.3534347845857351,
+    "feature_std_min": 0.2126873598067029,
+    "feature_std_median": 0.3104335449498529,
+    "feature_norm_mean": 11.222062901691153,
+    "cosine_raw": {
+      "same_class": {
+        "mean": 0.6232649277946124,
+        "p05": 0.3350335769939216,
+        "p50": 0.6461426420716925,
+        "p95": 0.8305396449685469,
+        "n_pairs": 10000
+      },
+      "different_class": {
+        "mean": 0.5447791191984692,
+        "p05": 0.26066027576833684,
+        "p50": 0.5618634458900651,
+        "p95": 0.771212084711323,
+        "n_pairs": 10000
+      }
+    },
+    "cosine_centered": {
+      "same_class": {
+        "mean": 0.16901244847228292,
+        "p05": -0.24065058275244205,
+        "p50": 0.1643063008011123,
+        "p95": 0.5959166629562687,
+        "n_pairs": 10000
+      },
+      "different_class": {
+        "mean": 0.00152544120425397,
+        "p05": -0.34429834051116287,
+        "p50": -0.01081668333015167,
+        "p95": 0.3817450146156608,
+        "n_pairs": 10000
+      }
+    },
+    "zero_centered_variance": false,
+    "interpretation": "Descriptive train-only measures; compare with matched random encoder. No pass threshold."
+  },
+  "probe_final": {
+    "epoch": 200,
+    "online_train_loss": 1.8611291627432731,
+    "online_train_top1": 0.5209426841042746,
+    "dev_scores": {
+      "top1": 0.4692137669718977,
+      "top5": 0.7542627091885065,
+      "knn": 0.3680928323334386
+    }
+  },
+  "n_probe_train": 113930,
+  "n_dev": 12668,
+  "n_conflicting_records_excluded": 86
+}

@@ -1,0 +1,96 @@
+{
+  "status": "PILOT_COMPLETE",
+  "seed": 0,
+  "n_runs": 4,
+  "created_utc": "2026-09-11T12:22:35.527529+00:00",
+  "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+  "rows": [
+    {
+      "arm": "k0",
+      "job": {
+        "seed": 0,
+        "k": 0,
+        "method": "sepa"
+      },
+      "scores": {
+        "top1": 0.1518,
+        "top5": 0.3698,
+        "knn": 0.1132
+      },
+      "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k0-s0-84d4cf0f4f01/probe.json"
+    },
+    {
+      "arm": "k3",
+      "job": {
+        "seed": 0,
+        "k": 3,
+        "method": "sepa"
+      },
+      "scores": {
+        "top1": 0.1726,
+        "top5": 0.4032,
+        "knn": 0.1176
+      },
+      "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k3-s0-4adbf4439def/probe.json"
+    },
+    {
+      "arm": "k6",
+      "job": {
+        "seed": 0,
+        "k": 6,
+        "method": "sepa"
+      },
+      "scores": {
+        "top1": 0.18,
+        "top5": 0.419,
+        "knn": 0.1262
+      },
+      "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-sepa-k6-s0-82c183aab33f/probe.json"
+    },
+    {
+      "arm": "full",
+      "job": {
+        "seed": 0,
+        "k": 0,
+        "method": "full"
+      },
+      "scores": {
+        "top1": 0.1862,
+        "top5": 0.4174,
+        "knn": 0.1504
+      },
+      "output": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs/native80-reflect-full-k0-s0-54ae3007dadd/probe.json"
+    }
+  ],
+  "top1_order": [
+    "full",
+    "k6",
+    "k3",
+    "k0"
+  ],
+  "comparisons": {
+    "k3_minus_k0": {
+      "paired_seeds": [
+        0
+      ],
+      "mean_pp": 2.0800000000000014,
+      "bootstrap_95ci_pp": null
+    },
+    "k3_minus_k6": {
+      "paired_seeds": [
+        0
+      ],
+      "mean_pp": -0.739999999999999,
+      "bootstrap_95ci_pp": null
+    },
+    "k3_minus_full": {
+      "paired_seeds": [
+        0
+      ],
+      "mean_pp": -1.36,
+      "bootstrap_95ci_pp": null
+    }
+  },
+  "multi_seed_status": "INSUFFICIENT",
+  "interpretation": "Descriptive single-seed trends only; seed variability has not been estimated."
+}

@@ -1,0 +1,30 @@
+# Tiny model, real images. Verifies plumbing only, never a scientific result.
+[geometry]
+mode = "native80"
+
+[model]
+name = "tiny"
+predictor_dim = 32
+predictor_depth = 1
+predictor_heads = 4
+
+[data]
+train_manifest = "../data/smoke/train.json"
+val_manifest = "../data/smoke/val.json"
+expected_classes = 10
+
+[training]
+steps = 4
+batch_size = 4
+warmup_steps = 1
+checkpoint_every = 2
+log_every = 1
+num_workers = 0
+device = "auto"
+output_root = "../runs/smoke"
+
+[probe]
+epochs = 2
+batch_size = 16
+knn_k = 3
+spatial_steps = 5

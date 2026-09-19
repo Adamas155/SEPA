@@ -1,0 +1,37 @@
+{
+  "pid": 2217,
+  "log": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/diagnostics-20260912T042205Z.log",
+  "started_utc": "20260912T042205Z",
+  "evidence": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/server-logs/diagnostic-recovery-20260912T042205Z",
+  "command": "server/run_diagnostics.py --project /root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b",
+  "runtime_check": {
+    "source_hash": "a659af0796728674296cf87415ad5ebf02b8d946836d142bae894e43d0bec0c4",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "cuda": "12.8",
+    "file_limit": {
+      "soft_before": 1024,
+      "soft": 65536,
+      "hard": 1048576
+    },
+    "n_validation": 5000,
+    "n_train_tail": 92,
+    "validation_features_bitwise_equal": true,
+    "validation_max_abs_difference": 0.0,
+    "train_tail_features_bitwise_equal": true,
+    "train_tail_max_abs_difference": 0.0,
+    "scores": {
+      "top1": 0.1518,
+      "top5": 0.3698,
+      "knn": 0.1132
+    },
+    "original_scores": {
+      "top1": 0.1518,
+      "top5": 0.3698,
+      "knn": 0.1132
+    },
+    "new_pretraining": false,
+    "cache_policy": "Reuse verified caches; full val and final training-batch features match bitwise"
+  }
+}

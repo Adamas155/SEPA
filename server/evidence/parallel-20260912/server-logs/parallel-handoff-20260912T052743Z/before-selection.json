@@ -1,0 +1,97 @@
+{
+  "selected": {
+    "learning_rate": 0.005,
+    "epochs": 200,
+    "mean_dev_top1": 0.22288443321755605,
+    "anchors": {
+      "k0_student": 0.20192611304073255,
+      "full_student": 0.24384275339437955
+    }
+  },
+  "candidates": [
+    {
+      "learning_rate": 0.005,
+      "epochs": 200,
+      "mean_dev_top1": 0.22288443321755605,
+      "anchors": {
+        "k0_student": 0.20192611304073255,
+        "full_student": 0.24384275339437955
+      }
+    },
+    {
+      "learning_rate": 0.005,
+      "epochs": 100,
+      "mean_dev_top1": 0.21574044837385536,
+      "anchors": {
+        "k0_student": 0.19513735396274076,
+        "full_student": 0.23634354278497
+      }
+    },
+    {
+      "learning_rate": 0.005,
+      "epochs": 50,
+      "mean_dev_top1": 0.2065440479949479,
+      "anchors": {
+        "k0_student": 0.18337543416482477,
+        "full_student": 0.22971266182507105
+      }
+    },
+    {
+      "learning_rate": 0.05,
+      "epochs": 50,
+      "mean_dev_top1": 0.19197979160088413,
+      "anchors": {
+        "k0_student": 0.17311335648879064,
+        "full_student": 0.2108462267129776
+      }
+    },
+    {
+      "learning_rate": 0.05,
+      "epochs": 200,
+      "mean_dev_top1": 0.19059835806757183,
+      "anchors": {
+        "k0_student": 0.17208714872118724,
+        "full_student": 0.20910956741395642
+      }
+    },
+    {
+      "learning_rate": 0.05,
+      "epochs": 100,
+      "mean_dev_top1": 0.189493211240922,
+      "anchors": {
+        "k0_student": 0.17256078307546574,
+        "full_student": 0.2064256394063783
+      }
+    },
+    {
+      "learning_rate": 0.1,
+      "epochs": 50,
+      "mean_dev_top1": 0.1669561098831702,
+      "anchors": {
+        "k0_student": 0.147379223239659,
+        "full_student": 0.1865329965266814
+      }
+    },
+    {
+      "learning_rate": 0.1,
+      "epochs": 200,
+      "mean_dev_top1": 0.16379854752131356,
+      "anchors": {
+        "k0_student": 0.13995895168929587,
+        "full_student": 0.18763814335333123
+      }
+    },
+    {
+      "learning_rate": 0.1,
+      "epochs": 100,
+      "mean_dev_top1": 0.16371960846226713,
+      "anchors": {
+        "k0_student": 0.14666877170824125,
+        "full_student": 0.180770445216293
+      }
+    }
+  ],
+  "selection_rule": "Mean internal-dev Top-1 across k0 student and full student; ties: fewer epochs, then smaller LR.",
+  "official_validation_used_for_selection": false,
+  "protocol_id": "06d224d7de0aaf7803f8894439f00c6d0934185d9d8504d5bb23a17ebae67660"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "seed": 0,
+  "screen_epochs": 25,
+  "branch_period": 4,
+  "local_branch_residue": 3,
+  "global_batch_fraction": 0.75,
+  "local_batch_fraction": 0.25,
+  "arms": ["k0", "k3"],
+  "grid_side": 3,
+  "tile_size": 80,
+  "patch_size": 16,
+  "hidden_noncenter_tiles": 2,
+  "center_anchor": 4,
+  "internal_dev_fraction": 0.1,
+  "description": "SEPA V2 screen. Three standard global I-JEPA batches alternate with one tile-local canonical-prediction batch. K0 and k3 differ only in the controlled permutation on local batches. The clean EMA teacher is global, all targets remain patch-level, and the official 6x384 predictor and optimizer recipe are unchanged."
+}

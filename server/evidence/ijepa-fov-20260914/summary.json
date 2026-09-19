@@ -1,0 +1,177 @@
+{
+  "status": "complete",
+  "utc": "2026-09-14T04:52:13.338257+00:00",
+  "protocol": {
+    "schema": 1,
+    "experiment": "frozen_ijepa_global_vs_local80",
+    "source_run_id": "3e242d05b38e789016cceb96b7c1d55983842c5d640b508965442a6576b8558f",
+    "checkpoint_sha": "7a651508975a97ab68b7a67129bea0cb737f1ef8ff2f3bb9ffb154fa7c0cd412",
+    "train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+    "val_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+    "script_sha": "2147c1040622fda8934ef61d16f9337b1fec3997848f4beca42e460e66024673",
+    "baseline_adapter_sha": "47971b459e121a8aafd6e80f76496801fa5b266cad6b2434be60d9cbc10881e0",
+    "diagnostic_sha": "368ce3d8c4d052d5fb1e8744332e96df90163434bb953cc4ffdbc79636194611",
+    "probe": {
+      "epochs": 200,
+      "batch_size": 128,
+      "learning_rate": 0.005,
+      "weight_decay": 0.0,
+      "label_fraction": 1.0,
+      "knn_k": 20,
+      "knn_temperature": 0.07,
+      "spatial_steps": 300,
+      "spatial_learning_rate": 0.01
+    },
+    "seed": 0,
+    "branches": [
+      "student",
+      "teacher"
+    ],
+    "precision": "fp32",
+    "input": "same center-square bicubic 240px RGB images",
+    "local": "nine independent 5x5 patch sequences; original global position embeddings; no resizing",
+    "pooling": "mean of all 225 outputs in original raster order for both conditions",
+    "limitation": "Frozen whole-image-pretrained weights. Local evaluation changes the inference distribution; this is not a local-pretraining ablation.",
+    "experiment_id": "d01ebf3961178df82a91c588217de1b15a74d48c04d470eed33ffc86ef62707a"
+  },
+  "results": {
+    "student": {
+      "scores": {
+        "top1": 0.5154,
+        "top5": 0.7984,
+        "knn": 0.3888
+      },
+      "global_scores": {
+        "top1": 0.5292,
+        "top5": 0.8084,
+        "knn": 0.4242
+      },
+      "global_minus_local_top1_pp": 1.3800000000000034,
+      "paired": {
+        "global_only_correct": 412,
+        "local_only_correct": 343,
+        "both_correct": 2234,
+        "both_wrong": 2011
+      },
+      "feature_health": {
+        "n_images": 10000,
+        "dimension": 384,
+        "total_centered_variance": 43.69537806514363,
+        "effective_rank": 72.21828155910121,
+        "participation_rank": 38.566892572119436,
+        "explained_variance": {
+          "1": 0.0748824262278521,
+          "5": 0.26996707161296984,
+          "10": 0.42961018791346384
+        },
+        "feature_std_mean": 0.3288703443481212,
+        "feature_std_min": 0.24233318273827123,
+        "feature_std_median": 0.3123588982078204,
+        "feature_norm_mean": 12.022792074287187,
+        "cosine_raw": {
+          "same_class": {
+            "mean": 0.7547777142324102,
+            "p05": 0.595030239086794,
+            "p50": 0.7643893138919731,
+            "p95": 0.8815100569406259,
+            "n_pairs": 10000
+          },
+          "different_class": {
+            "mean": 0.7016464451300052,
+            "p05": 0.5453916231377917,
+            "p50": 0.7087459029528922,
+            "p95": 0.8341165527202704,
+            "n_pairs": 10000
+          }
+        },
+        "cosine_centered": {
+          "same_class": {
+            "mean": 0.17276181016020273,
+            "p05": -0.14240547743969745,
+            "p50": 0.14966231104616629,
+            "p95": 0.5551229455926063,
+            "n_pairs": 10000
+          },
+          "different_class": {
+            "mean": 0.00033634220858546194,
+            "p05": -0.23043774555319058,
+            "p50": -0.019334892036674434,
+            "p95": 0.29092419363469196,
+            "n_pairs": 10000
+          }
+        },
+        "zero_centered_variance": false,
+        "interpretation": "Descriptive train-only measures; compare with matched random encoder. No pass threshold."
+      }
+    },
+    "teacher": {
+      "scores": {
+        "top1": 0.515,
+        "top5": 0.8,
+        "knn": 0.3904
+      },
+      "global_scores": {
+        "top1": 0.5286,
+        "top5": 0.8074,
+        "knn": 0.4236
+      },
+      "global_minus_local_top1_pp": 1.3599999999999945,
+      "paired": {
+        "global_only_correct": 401,
+        "local_only_correct": 333,
+        "both_correct": 2242,
+        "both_wrong": 2024
+      },
+      "feature_health": {
+        "n_images": 10000,
+        "dimension": 384,
+        "total_centered_variance": 44.66862473487622,
+        "effective_rank": 72.81960498938989,
+        "participation_rank": 38.982950621299985,
+        "explained_variance": {
+          "1": 0.0741765565959493,
+          "5": 0.26741214250165346,
+          "10": 0.42673080664148677
+        },
+        "feature_std_mean": 0.3324736420440714,
+        "feature_std_min": 0.24465802172024884,
+        "feature_std_median": 0.31609968452610043,
+        "feature_norm_mean": 11.875865754203103,
+        "cosine_raw": {
+          "same_class": {
+            "mean": 0.7429613730757584,
+            "p05": 0.5780021322580811,
+            "p50": 0.7528576204858916,
+            "p95": 0.8742501133546111,
+            "n_pairs": 10000
+          },
+          "different_class": {
+            "mean": 0.6876545640165594,
+            "p05": 0.5275503976555077,
+            "p50": 0.6944197944842971,
+            "p95": 0.825639607483244,
+            "n_pairs": 10000
+          }
+        },
+        "cosine_centered": {
+          "same_class": {
+            "mean": 0.1718202431492023,
+            "p05": -0.14226729577256086,
+            "p50": 0.148601182708944,
+            "p95": 0.5541555057634834,
+            "n_pairs": 10000
+          },
+          "different_class": {
+            "mean": 0.00036322905077399223,
+            "p05": -0.22892876081344835,
+            "p50": -0.019688421388932252,
+            "p95": 0.29007431527576766,
+            "n_pairs": 10000
+          }
+        },
+        "zero_centered_variance": false,
+        "interpretation": "Descriptive train-only measures; compare with matched random encoder. No pass threshold."
+      }
+    }
+  }
+}

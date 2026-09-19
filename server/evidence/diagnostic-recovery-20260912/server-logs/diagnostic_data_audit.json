@@ -1,0 +1,621 @@
+{
+  "train": {
+    "records": 126684,
+    "unique": 126633,
+    "duplicate_groups": 51,
+    "conflicting_groups": 43,
+    "conflicting_records": 86,
+    "conflicts": {
+      "ee08fa75a0ebf5b21e08918f2b59be3bf1bd35b7c76258ff535da27eadcd9b04": [
+        {
+          "index": 3115,
+          "path": "n01729322/n01729322_18190.JPEG",
+          "label": 2,
+          "class": "n01729322"
+        },
+        {
+          "index": 6393,
+          "path": "n01749939/n01749939_8699.JPEG",
+          "label": 4,
+          "class": "n01749939"
+        }
+      ],
+      "dd960eafd9fc37340fbf463abde633217d1584bcab08164ac31aa02a4c9ca2cc": [
+        {
+          "index": 10620,
+          "path": "n01978455/n01978455_12362.JPEG",
+          "label": 8,
+          "class": "n01978455"
+        },
+        {
+          "index": 12989,
+          "path": "n01980166/n01980166_9914.JPEG",
+          "label": 9,
+          "class": "n01980166"
+        }
+      ],
+      "407c44b86434d07ac7ab0bd73cefcb88df4ddbd48aaf0370b676e5f54a89ab2a": [
+        {
+          "index": 11531,
+          "path": "n01978455/n01978455_7916.JPEG",
+          "label": 8,
+          "class": "n01978455"
+        },
+        {
+          "index": 12477,
+          "path": "n01980166/n01980166_5507.JPEG",
+          "label": 9,
+          "class": "n01980166"
+        }
+      ],
+      "200987df6c32bd54e5e2410b9499e78cc875881414aa45d9b9c2fb5122dc017e": [
+        {
+          "index": 20196,
+          "path": "n02086910/n02086910_316.JPEG",
+          "label": 15,
+          "class": "n02086910"
+        },
+        {
+          "index": 21183,
+          "path": "n02087046/n02087046_386.JPEG",
+          "label": 16,
+          "class": "n02087046"
+        }
+      ],
+      "137c377acea44211ec4dffbf8b55b1000adb42680065b99f2af521a82da8ffaf": [
+        {
+          "index": 21696,
+          "path": "n02089867/n02089867_1351.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 22796,
+          "path": "n02089973/n02089973_1514.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "d2b3b7a9aa65b28e306782f14844737d8f43a19a326891ae2d0bd082d90ffe52": [
+        {
+          "index": 21768,
+          "path": "n02089867/n02089867_1928.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 22879,
+          "path": "n02089973/n02089973_2131.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "b9b7fe0cfc6cc4578afd8782c3f59bf6b428add24a3f255de8c9ebd1fa4d8812": [
+        {
+          "index": 21885,
+          "path": "n02089867/n02089867_3083.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23019,
+          "path": "n02089973/n02089973_3394.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "842cc375f66e5363ff9ad87c5513a1b902f24925807fda9ec331a1992c0712d5": [
+        {
+          "index": 21923,
+          "path": "n02089867/n02089867_3487.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23064,
+          "path": "n02089973/n02089973_3862.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "a197d2cd06f62aa26973036ef4ab10e738f1185b55edebb10e8c70b959433d6f": [
+        {
+          "index": 22017,
+          "path": "n02089867/n02089867_424.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23128,
+          "path": "n02089973/n02089973_474.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "476551d52a95c601882c8dd57557bdcb64fc19ba786e107cc7cd730c8ef1ac69": [
+        {
+          "index": 22029,
+          "path": "n02089867/n02089867_4314.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 22708,
+          "path": "n02089973/n02089973_10943.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "0e73574b41e1d226bc788e5cdca840e8ab3106332ee678abdf55f045229fda7f": [
+        {
+          "index": 22125,
+          "path": "n02089867/n02089867_4915.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 22884,
+          "path": "n02089973/n02089973_2165.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "c67731f9eb9fc0f03fd6a9ea6429f1016906c8a478a7b6cdd2d947f8203bff2d": [
+        {
+          "index": 22285,
+          "path": "n02089867/n02089867_6107.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23386,
+          "path": "n02089973/n02089973_8559.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "b6aa0c6e9e5259a8cff3123d29196550af528e2e9f1aee272d8c4f1383280788": [
+        {
+          "index": 22293,
+          "path": "n02089867/n02089867_6150.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 22683,
+          "path": "n02089973/n02089973_10000.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "f8481a7484b8b2fb82820385767eb22a38bc55b2cdd0a4ecfec44cb0d718457b": [
+        {
+          "index": 22387,
+          "path": "n02089867/n02089867_6792.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23220,
+          "path": "n02089973/n02089973_5641.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "999417809a8261bc47722acc1477d08476a0aa632f5d6ee10c3079386f6c770f": [
+        {
+          "index": 22409,
+          "path": "n02089867/n02089867_692.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23360,
+          "path": "n02089973/n02089973_755.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "23d8cde498d7bd02008dc8815bd435c918e36e9a80f84f5f0754dafeed3b410c": [
+        {
+          "index": 22429,
+          "path": "n02089867/n02089867_7047.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23258,
+          "path": "n02089973/n02089973_5957.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "1da72b6643bab7e7673ade9cd1ae2e547b6f4116cfded197b429faf936846499": [
+        {
+          "index": 22467,
+          "path": "n02089867/n02089867_7318.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23209,
+          "path": "n02089973/n02089973_5488.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "2f30a55466084b5cc6f2eb933f4c1d6b826ac4d49a380c2cec08c12b3f93207d": [
+        {
+          "index": 22577,
+          "path": "n02089867/n02089867_8261.JPEG",
+          "label": 17,
+          "class": "n02089867"
+        },
+        {
+          "index": 23303,
+          "path": "n02089973/n02089973_6357.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        }
+      ],
+      "8bee04a8da50919e2001bf4d98b4eda3008f45df6b097a057a44accc425c5574": [
+        {
+          "index": 22941,
+          "path": "n02089973/n02089973_2695.JPEG",
+          "label": 18,
+          "class": "n02089973"
+        },
+        {
+          "index": 25405,
+          "path": "n02091831/n02091831_3922.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "fd88f9c0d942b3d2bc42bf41d8fac2d79a5310233097150950344865d575d186": [
+        {
+          "index": 23437,
+          "path": "n02090622/n02090622_1002.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 24903,
+          "path": "n02091831/n02091831_1264.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "2864cf25a640992587f10969986ddbbbf9bf0a56ea9a232aff9ef05c334f2052": [
+        {
+          "index": 23485,
+          "path": "n02090622/n02090622_10589.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 24998,
+          "path": "n02091831/n02091831_13794.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "c830925bc2c5acdb39ebb294baa37db9e1ad781381d03397fa5393f5c0a33593": [
+        {
+          "index": 23518,
+          "path": "n02090622/n02090622_11466.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25226,
+          "path": "n02091831/n02091831_2714.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "91e94ae948a0c057c84fdf244a10e7adbe3af18a214c8f8f21e5cb2a7db02be9": [
+        {
+          "index": 23634,
+          "path": "n02090622/n02090622_1753.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25162,
+          "path": "n02091831/n02091831_2285.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "78c31f32d9a54b3064df956fccf10069ecdf5220615abf7d62dcaf037188128b": [
+        {
+          "index": 23745,
+          "path": "n02090622/n02090622_2557.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25328,
+          "path": "n02091831/n02091831_3387.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "819b5a162b8f27cece1e0bd7ec5ba352f5721571346df34b59fa4eb172a61e72": [
+        {
+          "index": 23753,
+          "path": "n02090622/n02090622_2644.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25348,
+          "path": "n02091831/n02091831_3510.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "80ffdae6c96e8d8a10faa6e52ee26b9116df959b8503d0ffe2a1a782aa9c12f7": [
+        {
+          "index": 23802,
+          "path": "n02090622/n02090622_2962.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25395,
+          "path": "n02091831/n02091831_3888.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "bbc735d11f6e7a295ea40b43df3525f2021eb41ca10d3f031e356ef348197257": [
+        {
+          "index": 23831,
+          "path": "n02090622/n02090622_3186.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25432,
+          "path": "n02091831/n02091831_4191.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "3e82fe85b0d3860e5cd2f25b7a0c98255b223b8348d7d15bfe42959b0d5f487f": [
+        {
+          "index": 23979,
+          "path": "n02090622/n02090622_428.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25570,
+          "path": "n02091831/n02091831_542.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "d28ed7416d8501195e2096a8da693854ada7b989ac17be3cc06854cc7818d6fd": [
+        {
+          "index": 24150,
+          "path": "n02090622/n02090622_5273.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25403,
+          "path": "n02091831/n02091831_3914.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "7f8231c072b091b2bfa64d00217f022cee2ce1721b98b53358ebf6f50de126a5": [
+        {
+          "index": 24283,
+          "path": "n02090622/n02090622_6248.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 25183,
+          "path": "n02091831/n02091831_236.JPEG",
+          "label": 20,
+          "class": "n02091831"
+        }
+      ],
+      "17fe24d892035e4fd2b4eca10aae82727dc0399c72a95fb5c004a852a092f89d": [
+        {
+          "index": 24563,
+          "path": "n02090622/n02090622_837.JPEG",
+          "label": 19,
+          "class": "n02090622"
+        },
+        {
+          "index": 36508,
+          "path": "n02109047/n02109047_1158.JPEG",
+          "label": 29,
+          "class": "n02109047"
+        }
+      ],
+      "49f00667d01a24c9472fdf71c9280a505c908cb11f2a16dfa297e3aa9181f65c": [
+        {
+          "index": 29957,
+          "path": "n02104029/n02104029_1115.JPEG",
+          "label": 24,
+          "class": "n02104029"
+        },
+        {
+          "index": 38354,
+          "path": "n02113799/n02113799_2689.JPEG",
+          "label": 30,
+          "class": "n02113799"
+        }
+      ],
+      "51c3b4b57ceb57fac7f0a3bbd2872694ed415fcc61a74838b72595c37e2d6dd2": [
+        {
+          "index": 30923,
+          "path": "n02104029/n02104029_6920.JPEG",
+          "label": 24,
+          "class": "n02104029"
+        },
+        {
+          "index": 32250,
+          "path": "n02105505/n02105505_6292.JPEG",
+          "label": 25,
+          "class": "n02105505"
+        }
+      ],
+      "1a2e561cef8a71af81a0a85177162d94fd65c07c99abbf95a58a7a69fa7b39e5": [
+        {
+          "index": 36169,
+          "path": "n02108089/n02108089_5427.JPEG",
+          "label": 28,
+          "class": "n02108089"
+        },
+        {
+          "index": 37324,
+          "path": "n02109047/n02109047_5161.JPEG",
+          "label": 29,
+          "class": "n02109047"
+        }
+      ],
+      "b27486402fd6af3dc1253b590c425093681c0e16904d88d52a2275f63436d63b": [
+        {
+          "index": 40276,
+          "path": "n02114855/n02114855_16814.JPEG",
+          "label": 32,
+          "class": "n02114855"
+        },
+        {
+          "index": 42290,
+          "path": "n02116738/n02116738_8377.JPEG",
+          "label": 33,
+          "class": "n02116738"
+        }
+      ],
+      "96fe09d47289a72f1b8d9ef00b111dd50df9475a7015865e0e6f6d724b7e4ea7": [
+        {
+          "index": 55532,
+          "path": "n02701002/n02701002_1347.JPEG",
+          "label": 44,
+          "class": "n02701002"
+        },
+        {
+          "index": 106455,
+          "path": "n04336792/n04336792_1079.JPEG",
+          "label": 84,
+          "class": "n04336792"
+        }
+      ],
+      "b357ab56118a472484571c6fdb25e91ca8045c8ccb1b5da31ed9beb9c2ea38d8": [
+        {
+          "index": 56418,
+          "path": "n02701002/n02701002_5562.JPEG",
+          "label": 44,
+          "class": "n02701002"
+        },
+        {
+          "index": 107189,
+          "path": "n04336792/n04336792_4588.JPEG",
+          "label": 84,
+          "class": "n04336792"
+        }
+      ],
+      "980225269bdd6df7a3d107d1214e8b3873fdb5ffc03598eac0ca06fd96fd37e5": [
+        {
+          "index": 66053,
+          "path": "n03032252/n03032252_20871.JPEG",
+          "label": 52,
+          "class": "n03032252"
+        },
+        {
+          "index": 108478,
+          "path": "n04418357/n04418357_3508.JPEG",
+          "label": 85,
+          "class": "n04418357"
+        }
+      ],
+      "13677668e42e6b9dcb9a40f3af1117ea231b1e89864003155a2f9bd32a6289c7": [
+        {
+          "index": 66324,
+          "path": "n03032252/n03032252_34588.JPEG",
+          "label": 52,
+          "class": "n03032252"
+        },
+        {
+          "index": 108636,
+          "path": "n04418357/n04418357_5148.JPEG",
+          "label": 85,
+          "class": "n04418357"
+        }
+      ],
+      "2c13b1e309c2ebfe484f84bb0fe8efb5b57fee87b4ffffaaef84fb549e34a117": [
+        {
+          "index": 73262,
+          "path": "n03424325/n03424325_7457.JPEG",
+          "label": 57,
+          "class": "n03424325"
+        },
+        {
+          "index": 113259,
+          "path": "n04493381/n04493381_44228.JPEG",
+          "label": 89,
+          "class": "n04493381"
+        }
+      ],
+      "309abce0983698ef2f57d21a1ce601b0f65aca21d65ba73e157f5294df5fa179": [
+        {
+          "index": 81496,
+          "path": "n03642806/n03642806_15887.JPEG",
+          "label": 64,
+          "class": "n03642806"
+        },
+        {
+          "index": 115585,
+          "path": "n04589890/n04589890_4029.JPEG",
+          "label": 91,
+          "class": "n04589890"
+        }
+      ],
+      "e50879622a1692ae8d4e5c08a5b39bbe2a52a0fa0c204daaa02b2f0b0ce8c122": [
+        {
+          "index": 83494,
+          "path": "n03764736/n03764736_8282.JPEG",
+          "label": 65,
+          "class": "n03764736"
+        },
+        {
+          "index": 112826,
+          "path": "n04493381/n04493381_20002.JPEG",
+          "label": 89,
+          "class": "n04493381"
+        }
+      ],
+      "7984d8b71f5bd9b3c34c79915229eeceb656866ff52e7422631c4f8370c5d038": [
+        {
+          "index": 117884,
+          "path": "n07714571/n07714571_1434.JPEG",
+          "label": 93,
+          "class": "n07714571"
+        },
+        {
+          "index": 119060,
+          "path": "n07715103/n07715103_12958.JPEG",
+          "label": 94,
+          "class": "n07715103"
+        }
+      ]
+    }
+  },
+  "val": {
+    "records": 5000,
+    "unique": 5000,
+    "duplicate_groups": 0,
+    "conflicting_groups": 0,
+    "conflicting_records": 0,
+    "conflicts": {}
+  }
+}

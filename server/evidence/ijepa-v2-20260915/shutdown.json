@@ -1,0 +1,31 @@
+{
+  "status": "requested",
+  "utc": "2026-09-14T19:53:28.725743+00:00",
+  "user_requested": true,
+  "verification": {
+    "screen_id": "0242b3dd60e1cecded377ad5f174900432ccfb70e097deea6a968cd1a374363c",
+    "summary": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/diagnostics/ijepa-v2-screen-0242b3dd60e1/summary.json",
+    "summary_sha": "ac2df5cdff25ad7bdaccb4d4118572f7495e98b602dbf371f093e35db55d4dfd",
+    "checkpoints": {
+      "k0": "799dcf0f8b36a7b486712b229d31c2938db669703fbe90002763ff6da21911eb",
+      "k3": "2f59bb6a0c543e4c2e885506c94cf28b4c39217121c1c80efb2bc189172b4427"
+    },
+    "results": {
+      "ijepa-baseline-e25": {
+        "top1": 0.4985790969371645,
+        "top5": 0.7703662772339753,
+        "knn": 0.4140353646984528
+      },
+      "v2-k0-e25": {
+        "top1": 0.4526365645721503,
+        "top5": 0.7379223239658983,
+        "knn": 0.3374644774234291
+      },
+      "v2-k3-e25": {
+        "top1": 0.4692137669718977,
+        "top5": 0.7542627091885065,
+        "knn": 0.3680928323334386
+      }
+    }
+  }
+}

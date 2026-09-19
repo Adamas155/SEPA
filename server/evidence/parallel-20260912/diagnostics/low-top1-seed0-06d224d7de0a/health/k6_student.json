@@ -1,0 +1,50 @@
+{
+  "n_images": 10000,
+  "dimension": 384,
+  "total_centered_variance": 11.476432452141076,
+  "effective_rank": 14.937152582595315,
+  "participation_rank": 8.7017370899507,
+  "explained_variance": {
+    "1": 0.23592327919868136,
+    "5": 0.659196014837088,
+    "10": 0.8265217907599947
+  },
+  "feature_std_mean": 0.16570985995322263,
+  "feature_std_min": 0.0884620988529226,
+  "feature_std_median": 0.1543457902475238,
+  "feature_norm_mean": 5.577719949248901,
+  "cosine_raw": {
+    "same_class": {
+      "mean": 0.6885522458112672,
+      "p05": 0.40343493672296804,
+      "p50": 0.7140762924714383,
+      "p95": 0.8804663235189011,
+      "n_pairs": 10000
+    },
+    "different_class": {
+      "mean": 0.648942525704684,
+      "p05": 0.3460899673972525,
+      "p50": 0.6754599959544839,
+      "p95": 0.8590156720442482,
+      "n_pairs": 10000
+    }
+  },
+  "cosine_centered": {
+    "same_class": {
+      "mean": 0.10753367806964256,
+      "p05": -0.42239973368088385,
+      "p50": 0.10664434280538976,
+      "p95": 0.6360711220747275,
+      "n_pairs": 10000
+    },
+    "different_class": {
+      "mean": 0.0031280681859972527,
+      "p05": -0.4960128060931914,
+      "p50": -0.0028867543521299797,
+      "p95": 0.5233646442911617,
+      "n_pairs": 10000
+    }
+  },
+  "zero_centered_variance": false,
+  "interpretation": "Descriptive train-only measures; compare with matched random encoder. No pass threshold."
+}

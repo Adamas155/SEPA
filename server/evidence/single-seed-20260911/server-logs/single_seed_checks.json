@@ -1,0 +1,12 @@
+{
+  "incomplete_pilot_rejected": true,
+  "incomplete_pilot_queue_unchanged": true,
+  "complete_pilot_finalized": true,
+  "active_pid": null,
+  "n_jobs": 4,
+  "selected_seeds": [
+    0
+  ],
+  "preserved_unselected_completed_jobs": 2,
+  "repeat_finalize_preserves_audit": true
+}

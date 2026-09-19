@@ -1,0 +1,32 @@
+{
+  "pid": 2129,
+  "utc": "2026-09-14T14:56:45.879892+00:00",
+  "run_dir": "/root/autodl-tmp/sepa-plan-b-a659af079672/sepa-plan-b/runs-ijepa/local-student-global-teacher-s0-3e44ae15a866",
+  "run_id": "3e44ae15a866f0dc00fda530bd8782c21925577a619e496dfaf784d7cd36793c",
+  "shutdown_on_success": false,
+  "phase": "complete",
+  "step": 198000,
+  "target_step": 198000,
+  "results": {
+    "student-local80": {
+      "top1": 0.467,
+      "top5": 0.7622,
+      "knn": 0.3118
+    },
+    "student-global240": {
+      "top1": 0.469,
+      "top5": 0.7676,
+      "knn": 0.3152
+    },
+    "teacher-local80": {
+      "top1": 0.4644,
+      "top5": 0.7636,
+      "knn": 0.3096
+    },
+    "teacher-global240": {
+      "top1": 0.4692,
+      "top5": 0.7674,
+      "knn": 0.3132
+    }
+  }
+}
