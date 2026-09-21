@@ -1,0 +1,78 @@
+{
+  "protocol_version": 1,
+  "data": {
+    "train_manifest": "data/imagenet100/train.json",
+    "test_manifest": "data/imagenet100/val.json",
+    "train_root": null,
+    "test_root": null,
+    "expected_classes": 100,
+    "expected_train_images": 126684,
+    "expected_test_images": 5000,
+    "expected_train_fingerprint": "9a7ff7775290a65a26289b713781f92a9373db05261a96d77a58c3aebc4b13fd",
+    "expected_test_fingerprint": "2fb02ba5781f39d1b6503c4f10b95a5614d5d3ce446c9cf503d76754a0741df4",
+    "existing_split": "diagnostics/low-top1-seed0-06d224d7de0a/internal_split.json",
+    "fallback_existing_split": "server/evidence/parallel-20260912/diagnostics/low-top1-seed0-06d224d7de0a/internal_split.json",
+    "duplicate_exclusions": "server/evidence/data/imagenet100/duplicates_excluded.json",
+    "split_seed": 0,
+    "dev_fraction": 0.1,
+    "design_seed": 1729,
+    "dedup_workers": 4
+  },
+  "extraction": {
+    "device": "cuda",
+    "batch_images": 64,
+    "tile_batch_size": 128,
+    "workers": 8,
+    "upstream_dir": "vendor/ijepa-52c1ae9"
+  },
+  "probe_seeds": [0, 1, 2],
+  "heads": ["linear"],
+  "probe": {
+    "learning_rates": [0.01],
+    "epochs": 30,
+    "patience": 5,
+    "batch_images": 256,
+    "weight_decay": 0.0
+  },
+  "smoke": {
+    "image_limits": [32, 16, 16],
+    "epochs": 2,
+    "patience": 2
+  },
+  "checkpoints": [
+    {
+      "name": "ijepa-e100", "family": "ijepa", "group": "A",
+      "path": "runs-ijepa/official-small240-s0-3e242d05b38e/latest.pt",
+      "epochs": 100, "pretraining_seed": 0, "steps_per_epoch": 1980,
+      "expected_file_hash": "7a651508975a97ab68b7a67129bea0cb737f1ef8ff2f3bb9ffb154fa7c0cd412"
+    },
+    {
+      "name": "v1-k0-e100", "family": "v1", "group": "A", "k": 0,
+      "path": "runs-long100/native80-reflect-sepa-k0-s0-673b6d604daf/milestones/epoch-100-step-198000.pt",
+      "epochs": 100, "pretraining_seed": 0, "steps_per_epoch": 1980
+    },
+    {
+      "name": "v1-k3-e100", "family": "v1", "group": "A", "k": 3,
+      "path": "runs-long100/native80-reflect-sepa-k3-s0-0e4eb528bf9e/milestones/epoch-100-step-198000.pt",
+      "epochs": 100, "pretraining_seed": 0, "steps_per_epoch": 1980
+    },
+    {
+      "name": "ijepa-e25", "family": "ijepa", "group": "B",
+      "path": "runs-ijepa/official-small240-s0-3e242d05b38e/milestones/epoch-025.pt",
+      "epochs": 25, "pretraining_seed": 0, "steps_per_epoch": 1980,
+      "expected_file_hash": "6f482ff6887dc6f1a94bde7344d3f55ae707582fa00aa9e1683b86ceeda3d948"
+    },
+    {
+      "name": "v2-k0-e25", "family": "v2", "group": "B", "k": 0,
+      "path": "runs-ijepa-v2/k0-s0-656eafd79cbc/milestones/epoch-025.pt",
+      "epochs": 25, "pretraining_seed": 0, "steps_per_epoch": 1980,
+      "expected_file_hash": "799dcf0f8b36a7b486712b229d31c2938db669703fbe90002763ff6da21911eb"
+    },
+    {
+      "name": "v2-k3-e25", "family": "v2", "group": "B", "k": 3,
+      "path": "runs-ijepa-v2/k3-s0-bf70e2311020/milestones/epoch-025.pt",
+      "epochs": 25, "pretraining_seed": 0, "steps_per_epoch": 1980,
+      "expected_file_hash": "2f59bb6a0c543e4c2e885506c94cf28b4c39217121c1c80efb2bc189172b4427"
+    }
+  ]
+}
